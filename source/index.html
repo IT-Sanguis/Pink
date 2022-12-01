@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Мобильное приложение «Pink»">
+  <meta name="description" content="Мобильное приложение «Pink»">
+  <title>«Pink»</title>
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-img" src="//via.placeholder.com/75x22" alt="Логотип «Pink»" width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://www.htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Мобильное приложение «Pink»</h1>
+
+    <section class="store">
+      <div class="store__wrapper">
+        <h2 class="visually-hidden">Ссылки для Скачать приложение</h2>
+        <a class="store__btn btn" href="https://www.apple.com/app-store/">Скачать приложение</a>
+        <ul class="store__list">
+          <li class="store__item">
+            <a class="store__link store__link--Iphone" href="https://www.apple.com/app-store/" title="Скачать для Iphone">Iphone</a>
+          </li>
+          <li class="store__item">
+            <a class="store__link store__link--Android" href="https://play.google.com/store" title="Скачать для Android">Android</a>
+          </li>
+          <li class="store__item">
+            <a class="store__link store__link--Windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" title="Скачать для Windows Phone">Windows Phone</a>
+          </li>
+        </ul>
+        <p class="store__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="visually-hidden">Наши особенности</h2>
+      <p class="features__slogan">Устали от серости мегаполиса?</p>
+      <p class="features__slogan">Нам есть, что вам предложить!</p>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
+        <div class="reviews__slider slider">
+          <blockquote class="reviews__item slider__item slider__item--current">
+            <cite class="reviews__author">Николай Петров</cite>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+          <!-- <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author">Иван Помидоров</cite>
+            <p class="reviews__text">
+              «В общем эта штука испортила всю мою жизнь. Сначала моя жена переписывалась с кем-то в комментариях, а потом взяла и ушла от меня :-(»
+            </p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author">Василиса Степановна</cite>
+            <p class="reviews__text">
+              «А куда тут тыкать то надо? Ничё не поняла!»
+            </p>
+          </blockquote> -->
+        </div>
+        <p class="reviews__dots slider__dots">
+          <button class="slider__dot slider__dot--current" type="button" aria-label="1">1</button>
+          <button class="slider__dot" type="button" aria-label="2">2</button>
+          <button class="slider__dot" type="button" aria-label="3">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="price">
+      <h2 class="visually-hidden">Доступные тарифы</h2>
+      <table class="price__table price-table">
+        <thead>
+          <tr>
+            <th class="price-table__header hit">
+              <span class="price-table__header-name">База</span>
+              <span class="price-table__header-price">1,99 USD</span>
+            </th>
+            <th class="price-table__header">
+              <span class="price-table__header-name">Стандарт</span>
+              <span class="price-table__header-price">3,99 USD</span>
+            </th>
+            <th class="price-table__header">
+              <span class="price-table__header-name">Анлим</span>
+              <span class="price-table__header-price">9,99 USD</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Розовый фильтр</span>
+              <span class="price-table__feature-value price-table__feature-value--true">+</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Розовый фильтр</span>
+              <span class="price-table__feature-value price-table__feature-value--true">+</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Розовый фильтр</span>
+              <span class="price-table__feature-value price-table__feature-value--true">+</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Смайлики</span>
+              <span class="price-table__feature-value price-table__feature-value--false">-</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Смайлики</span>
+              <span class="price-table__feature-value price-table__feature-value--true">+</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Смайлики</span>
+              <span class="price-table__feature-value price-table__feature-value--true">+</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Комментарии</span>
+              <span class="price-table__feature-value price-table__feature-value--false">-</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Комментарии</span>
+              <span class="price-table__feature-value price-table__feature-value--false">-</span>
+            </td>
+            <td class="price-table__cell">
+              <span class="price-table__feature">Комментарии</span>
+              <span class="price-table__feature-value price-table__feature-value--true">+</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="price__dots slider__dots">
+        <button class="slider__dot" type="button" aria-label="1">1</button>
+        <button class="slider__dot  slider__dot--current" type="button" aria-label="2">2</button>
+        <button class="slider__dot" type="button" aria-label="3">3</button>
+      </p>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <dl class="contacts__list">
+          <div class="contacts__item contacts__item--phone">
+            <dt>Звоните:</dt>
+            <dd><a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
+          </div>
+          <div class="contacts__item contacts__item--email">
+            <dt>Пишите:</dt>
+            <dd><a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
+          </div>
+          <div class="contacts__item contacts__item--address">
+            <dt>Приезжайте в гости:</dt>
+            <dd><address class="contacts__address">ул. Большая Конюшенная, 19/8</address></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="contacts__map">
+        <img class="map__img" width="320" height="200" src="//via.placeholder.com/320x200" alt="Мы на карте: ул. Большая Конюшенная, 19/8">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
