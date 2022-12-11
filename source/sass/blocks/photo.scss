@@ -1,0 +1,93 @@
+.photo {
+
+
+  &--full {
+    width: 100%;
+    position: relative;
+    padding: 0;
+
+    .photo__link {
+      position: relative;
+      // z-index: -1;
+
+      &::before {
+        content: "Панорама дня";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: calc(50% - 140px);
+
+        display: block;
+        width: 140px;
+        height: 36px;
+        padding: 6px 10px;
+
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 2;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color--white;
+
+        background-color: $color--brand;
+      }
+    }
+
+    // img {
+    //   display: block;
+    //   height: 100%;
+    // }
+
+    figcaption {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.photo__link {
+}
+
+
+.photo__img {
+  margin: 0 auto;
+}
+
+
+.photo__content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: $color-bg--secondary;
+}
+
+
+.photo__author {
+  @include reset;
+}
+
+
+.photo__author-name {
+  font-weight: 700;
+}
+
+
+.photo__data {
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+.photo__text {
+  @include reset;
+  margin-bottom: 20px;
+}
+
+
+.photo__like {
+}

@@ -1,0 +1,159 @@
+.contest {
+  padding-top: 30px;
+}
+
+
+.contest__desc {
+  margin-bottom: 40px;
+
+  text-align: center;
+  line-height: 2.14;
+}
+
+
+.contest__sub-desc {
+  display: none;
+}
+
+
+.contest__form {
+  @include reset;
+}
+
+
+.contest__fieldset-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &:nth-child(even) {
+    background-color: $color-bg--secondary;
+  }
+}
+
+
+.contest__fieldset {
+  @include reset;
+
+  border: none;
+
+  .contest__input:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
+.contest__lable {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 20px;
+
+  line-height: 2.14;
+  text-transform: uppercase;
+  color: $color--brand;
+}
+
+
+.contest__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+
+  font-size: 18px;
+  line-height: 1.66;
+
+  border: 2px solid $color-btn--disabled;
+  border-radius: 2px;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+
+.contest__subtitle {
+  @include reset;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+
+  text-align: center;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: $color--brand;
+}
+
+
+.contest__list {
+  @include reset-list;
+  margin-top: 20px;
+
+  :not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+
+.contest__item {
+  padding-left: 70px;
+}
+
+
+.contest__label-radio,
+.contest__label-checkbox,
+.contest__textarea {
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+
+.contest__label-checkbox {
+}
+
+
+.contest__label-radio {
+}
+
+
+.contest__textarea {
+  width: 100%;
+  padding: 20px;
+
+  border: 2px solid $color-btn--disabled;
+  border-radius: 2px;
+
+  resize: none;
+}
+
+
+.contest__submit-wrapper {
+
+}
+
+
+.contest__btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.contest__legend {
+  display: block;
+  margin-top: 20px;
+
+  font-size: inherit;
+  line-height: 2.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  :first-child {
+    font-size: inherit;
+    color: $color--brand;
+  }
+}

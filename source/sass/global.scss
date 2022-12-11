@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  @include reset;
+  min-width: $mobile-width;
+
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $color--primary;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

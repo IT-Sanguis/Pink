@@ -1,0 +1,41 @@
+.reviews {
+  position: relative;
+  z-index: 1;
+
+  min-height: 340px;
+  padding-top: 43px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+.reviews__slider {
+}
+
+
+.reviews__item {
+  @include reset;
+}
+
+
+.reviews__author {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.66;
+  font-style: normal;
+  color: $color--black;
+}
+
+
+.reviews__text {
+  @include reset;
+  margin-bottom: 30px;
+  line-height: 2.14;
+}
+
+
+.reviews__dots {
+}

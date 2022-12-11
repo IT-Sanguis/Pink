@@ -1,0 +1,23 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin reset-list {
+  @include reset;
+  list-style: none;
+}
+
+@mixin btn-border {
+  min-width: 280px;
+  min-height: 55px;
+
+  line-height: 1;
+  text-transform: none;
+
+  background-color: transparent;
+  border: solid 3px $color--white;
+  border-radius: 50px;
+}
+

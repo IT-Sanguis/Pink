@@ -1,0 +1,42 @@
+.modal {
+  text-align: center;
+
+
+  &--success .modal__btn-wrapper {
+    background-color: $color-bg--secondary;
+  }
+
+
+  &--failure {
+
+  }
+}
+
+.modal__content-wrapper {
+  padding-top: 40px;
+}
+
+.modal__title {
+  @include reset;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  line-height: 1.33;
+  color: $color--black;
+}
+
+
+.modal__desc {
+  @include reset;
+  margin-bottom: 10px;
+}
+
+.modal__btn-wrapper {
+  padding: 40px 20px;
+
+}
+
+
+.modal__btn {
+  width: 100%;
+}

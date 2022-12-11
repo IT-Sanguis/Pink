@@ -1,0 +1,23 @@
+.like {
+  color: $color--brand;
+}
+
+
+.like__btn {
+  color: inherit;
+
+  border: none;
+  // border-color: inherit;
+}
+
+.like__link {
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+
+.like__count {
+  color: inherit;
+}

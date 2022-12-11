@@ -1,0 +1,37 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "Личный проект Pink",
+  "private": true,
+  "author": "IT-Sanguis",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "htmlhint": "^1.1.4",
+    "postcss": "^8.4.19",
+    "postcss-scss": "^4.0.6",
+    "sass": "^1.56.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-htmlacademy": "^1.1.3",
+    "stylelint-config-prettier": "^9.0.4"
+  },
+  "scripts": {
+    "hint": "htmlhint path/to/html/files/*.html",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "test": "npm run stylelint",
+    "build": "gulp style"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}

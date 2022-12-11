@@ -1,0 +1,27 @@
+.promo {
+    position: relative;
+
+    min-height: 240px;
+    padding-top: 100px;
+
+    background-color: $color-bg--tertiary;
+    background-image: url("../img//bg-store@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+.promo__wrapper {
+  text-align: center;
+}
+
+.promo__title {
+  @include reset;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color--white;
+}
+

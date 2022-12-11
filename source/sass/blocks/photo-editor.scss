@@ -1,0 +1,95 @@
+.photo-editor {
+}
+
+
+.photo-editor__input {
+}
+
+
+.photo-editor__label {
+  position: relative;
+
+  display: block;
+  min-height: 230px;
+  margin-bottom: 40px;
+}
+
+.photo-editor__img-empty {
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 20px;
+
+  font-size: 16px;
+  color: $color--brand;
+
+  border: 2px solid $color--brand;
+  background-image: url(../img/brand_add_img.svg);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center 60px;
+
+
+  transform: translate(-50%);
+}
+
+
+.photo-editor__img {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+
+.photo-editor__tools {
+  position: relative;
+  @include reset-list;
+  padding-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+
+    width: calc(100% + 20px * 2);
+    height: 1px;
+    background-color: $color--primary-10;
+  }
+}
+
+
+.photo-editor__tool {
+}
+
+
+.photo-editor__crop {
+}
+
+
+.photo-editor__range {
+}
+
+
+.photo-editor__fill {
+}
+
+
+.photo-editor__contrast {
+}
+
+
+.photo-editor__btns {
+  padding-top: 40px;
+}
+
+
+.photo-editor__btn {
+  margin-bottom: 12px;
+}
