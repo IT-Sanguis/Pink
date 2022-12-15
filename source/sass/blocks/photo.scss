@@ -56,10 +56,10 @@
 
 
 .photo__content {
-  padding-top: 10px;
+  padding-top: 16px;
   padding-bottom: 20px;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 17px;
 
   background-color: $color-bg--secondary;
 }
@@ -85,7 +85,7 @@
 
 .photo__text {
   @include reset;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 

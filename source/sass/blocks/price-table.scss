@@ -23,7 +23,7 @@
   display: block;
 
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.67;
   font-weight: 700;
 }
 
@@ -32,7 +32,7 @@
   display: block;
 
   font-size: 24px;
-  line-height: 1.66;
+  line-height: 1.67;
   font-weight: 300;
 }
 
@@ -58,5 +58,18 @@
   }
 
   &--false {
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .price-table__header {
+    min-width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-table__header {
+    min-width: 235px;
   }
 }

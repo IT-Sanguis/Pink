@@ -4,10 +4,13 @@
 
 
 .like__btn {
+  @include reset;
   color: inherit;
 
   border: none;
   // border-color: inherit;
+
+  cursor: pointer;
 }
 
 .like__link {

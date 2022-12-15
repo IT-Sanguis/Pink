@@ -19,3 +19,14 @@
     background-position: 50% 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .slanted-bg {
+
+    &::before {
+      height: 130px;
+      background-size: cover;
+    }
+  }
+
+}

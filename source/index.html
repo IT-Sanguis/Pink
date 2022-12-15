@@ -17,7 +17,7 @@
 <body>
   <header class="page-header page-header--full">
   <!-- <header class="page-header"> -->
-    <div class="page-header__wrapper ">
+    <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-img" src="https://via.placeholder.com/75x22" alt="Логотип «Pink»" width="75" height="22">
       </a>
@@ -38,7 +38,8 @@
 
     <section class="promo promo-store">
       <div class="promo-store__wrapper">
-        <div class="container">
+        <div class="promo-store__content container">
+          <p class="promo-store__slogan">Взгляните на жизнь иначе!</p>
           <h2 class="visually-hidden">Ссылки на приложение</h2>
           <a class="promo-store__btn btn btn--border" href="https://www.apple.com/app-store/">Скачать приложение</a>
           <ul class="promo-store__list">
@@ -61,59 +62,76 @@
       <h2 class="visually-hidden">Наши особенности</h2>
       <div class="features__slogan-wrapper container">
         <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что вам предложить!</p>
+        <p class="features__slogan">Нам есть, что вам<br>предложить!</p>
       </div>
       <div class="features__wrapper slanted-bg">
-        <ul class="features__list container">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="features__list">
+            <li class="features__item features__item--mood">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item features__item--world">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            </li>
+            <li class="features__item features__item--friends">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </div>
+      <section class="features__research research">
+        <div class="container">
+          <div class="research__wrapper">
+            <h3 class="research__title">Эффект на&nbsp;24&nbsp;часа!</h3>
+            <p class="research__desc">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+            <a class="research__link" href="https://wikipedia.org/">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section class="reviews container">
-        <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
-        <div class="reviews__slider slider">
-          <div class="slider__item slider__item--current">
-            <blockquote class="reviews__item">
+      <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
+      <div class="reviews__slider slider">
+        <div class="slider__item slider__item--current">
+          <blockquote class="reviews__item">
+            <div class="reviews__author-wrapper">
               <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </blockquote>
-          </div>
-          <!-- <div class="slider__item">
-            <blockquote class="reviews__item">
-              <cite class="reviews__author">Иван Помидоров</cite>
-              <p class="reviews__text">
-                «В общем эта штука испортила всю мою жизнь. Сначала моя жена переписывалась с кем-то в комментариях, а потом взяла и ушла от меня :-(»
-              </p>
-            </blockquote>
-          </div>
-          <div class="slider__item">
-            <blockquote class="reviews__item">
-              <cite class="reviews__author">Василиса Степановна</cite>
-              <p class="reviews__text">
-                «А куда тут тыкать то надо? Ничё не поняла!»
-              </p>
-            </blockquote>
-          </div> -->
+              <p class="reviews__author-info">25 лет, водитель трамвая</p>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
         </div>
+        <!-- <div class="slider__item">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author">Иван Помидоров</cite>
+            <p class="reviews__text">
+              «В общем эта штука испортила всю мою жизнь. Сначала моя жена переписывалась с кем-то в комментариях, а потом взяла и ушла от меня :-(»
+            </p>
+          </blockquote>
+        </div>
+        <div class="slider__item">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author">Василиса Степановна</cite>
+            <p class="reviews__text">
+              «А куда тут тыкать то надо? Ничё не поняла!»
+            </p>
+          </blockquote>
+        </div> -->
+        <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий">&lt;</button>
+        <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий">&gt;</button>
         <div class="reviews__dots slider__dots">
           <button class="slider__dot slider__dot--current" type="button" aria-label="1">1</button>
           <button class="slider__dot" type="button" aria-label="2">2</button>
           <button class="slider__dot" type="button" aria-label="3">3</button>
         </div>
+      </div>
+
     </section>
 
     <section class="price slanted-bg ">
@@ -211,6 +229,7 @@
       </div>
       <div class="contacts__map map">
         <img class="map__img" width="320" height="200" src="https://via.placeholder.com/320x200" alt="Мы на карте: ул. Большая Конюшенная, 19/8">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716209067!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1670967564908!5m2!1sru!2s" width="700" height="848" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
     </section>
   </main>

@@ -1,7 +1,18 @@
 .map {
+  position: relative;
+
+  iframe {
+    display: none;
+  }
 }
 
 
 .map__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+
   margin: 0 auto;
+  z-index: -1;
 }

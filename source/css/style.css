@@ -361,6 +361,16 @@ img {
   padding: 0 20px;
 }
 
+@media (min-width: 660px) {
+  .container {
+    width: 660px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 960px;
+  }
+}
 .visually-hidden {
   clip: rect(0, 0, 0, 0);
   -webkit-clip-path: inset(100%); /* stylelint-disable-line */
@@ -395,7 +405,7 @@ img {
   cursor: pointer;
 }
 .btn--border {
-  min-width: 280px;
+  min-width: 100%;
   min-height: 55px;
   line-height: 1;
   text-transform: none;
@@ -405,7 +415,7 @@ img {
   color: white;
 }
 .btn--upload {
-  min-width: 280px;
+  min-width: 100%;
   min-height: 55px;
   line-height: 1;
   text-transform: none;
@@ -416,7 +426,7 @@ img {
   border-color: #d22856;
 }
 .btn--cancel {
-  min-width: 280px;
+  min-width: 100%;
   min-height: 55px;
   line-height: 1;
   text-transform: none;
@@ -439,8 +449,13 @@ img {
   position: relative;
   background-color: #283645;
 }
-.page-header--full .main-nav {
+.page-header--full nav {
   display: block;
+}
+
+.page-header__wrapper {
+  min-height: 69px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
 }
 
 .page-header__button {
@@ -473,6 +488,34 @@ img {
   vertical-align: middle;
 }
 
+@media (min-width: 660px) {
+  .page-header__wrapper {
+    min-height: 110px;
+  }
+}
+@media (min-width: 960px) {
+  .page-header__wrapper {
+    min-height: 110px;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+  }
+  .page-header__button {
+    display: none;
+  }
+  .page-header {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .page-header .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .main-nav {
   display: none;
 }
@@ -485,7 +528,7 @@ img {
 }
 
 .site-list__item {
-  box-shadow: inset 0 1px 0 #485461, inset 0 -1px 0 #000000;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
 }
 .site-list__link {
   display: block;
@@ -497,19 +540,42 @@ img {
   color: #ffffff;
 }
 
+@media (min-width: 960px) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 630px;
+  }
+  .site-list__item {
+    box-shadow: none;
+  }
+  .site-list__link {
+    padding: 16px 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+    color: #ffffff;
+  }
+}
 .page-main {
   margin-top: -68px;
 }
 
+@media (min-width: 960px) {
+  .page-main {
+    margin-top: 0;
+  }
+}
 .promo {
   position: relative;
   min-height: 240px;
   padding-top: 100px;
   background-color: #1d2631;
-  background-image: url("../img//bg-store@1x.jpg");
+  background-image: url("../img/bg-store-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto;
+  background-size: auto;
 }
 
 .promo__wrapper {
@@ -526,6 +592,18 @@ img {
   color: #ffffff;
 }
 
+@media (min-width: 660px) {
+  .promo {
+    background-image: url("../img/bg-store-tablet.jpg");
+    background-position: center -44px;
+  }
+}
+@media (min-width: 960px) {
+  .promo {
+    background-image: url("../img/bg-store-desktop.jpg");
+    background-position: center 0;
+  }
+}
 .promo-store {
   min-height: 670px;
   padding-top: 460px;
@@ -539,7 +617,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url("../img/iphone-5-in-hand.png");
+  background-image: url("../img/iphone-5-in-hand-mobile.png");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: auto;
@@ -550,6 +628,10 @@ img {
   width: 100%;
   padding-bottom: 20px;
   background-color: #283645;
+}
+
+.promo-store__slogan {
+  display: none;
 }
 
 .promo-store__btn {
@@ -578,6 +660,68 @@ img {
   font-weight: 300;
 }
 
+@media (min-width: 660px) {
+  .promo-store {
+    min-height: 686px;
+    padding-top: 160px;
+  }
+  .promo-store::before {
+    background-image: url("../img/iphone-5-in-hand-tablet.png");
+    background-position: center 100%;
+  }
+  .promo-store__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .promo-store__content {
+    margin-left: 0;
+    width: 340px;
+  }
+  .promo-store__slogan {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 0 35px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  .promo-store__desc {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+@media (min-width: 960px) {
+  .promo-store {
+    min-height: 853px;
+    padding-top: 220px;
+  }
+  .promo-store::before {
+    background-image: url("../img/iphone-5-in-hand-desktop.png");
+    background-position: 67% 0;
+    width: 560px;
+    height: 645px;
+    left: 50%;
+    transform: translateX(calc(-50% + 155px));
+  }
+  .promo-store__wrapper {
+    width: 960px;
+  }
+  .promo-store__content {
+    margin-left: -10px;
+  }
+  .promo-store__slogan {
+    font-size: 50px;
+  }
+  .promo-store__btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    line-height: 0.86;
+    padding: 15px 20px;
+  }
+}
 .slanted-bg {
   position: relative;
   margin-top: -30px;
@@ -596,6 +740,12 @@ img {
   background-position: 50% 0;
 }
 
+@media (min-width: 660px) {
+  .slanted-bg::before {
+    height: 130px;
+    background-size: cover;
+  }
+}
 .features {
   min-height: 1000px;
   padding-top: 40px;
@@ -626,14 +776,16 @@ img {
   display: block;
   width: 158px;
   height: 277px;
-  background-image: url("../img/iphone-screen.png");
+  background-image: url("../img/iphone-screen-mobile.png");
   background-repeat: no-repeat;
   background-position-x: 50%;
 }
 
 .features__list {
-  padding-bottom: 10px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -653,6 +805,221 @@ img {
   margin-bottom: 33px;
 }
 
+.features__research {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .features {
+    min-height: auto;
+    padding-top: 50px;
+  }
+  .features__wrapper {
+    padding-top: 98px;
+  }
+  .features__slogan-wrapper {
+    margin-bottom: 55px;
+  }
+  .features__slogan {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .features__list {
+    width: 310px;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: left;
+  }
+  .features__desc {
+    margin-bottom: 37px;
+  }
+  .features__wrapper {
+    min-height: 505px;
+  }
+  .features__wrapper::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-100% - 42px));
+    width: 268px;
+    height: 547px;
+    background-position-y: 63px;
+    background-image: url("../img/iphone-screen-tablet.png");
+  }
+  .features__research {
+    display: block;
+  }
+}
+@media (min-width: 960px) {
+  .features {
+    padding-top: 67px;
+  }
+  .features__wrapper {
+    padding-top: 115px;
+  }
+  .features__slogan-wrapper {
+    margin-bottom: 90px;
+  }
+  .features__slogan {
+    font-size: 50px;
+  }
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+  .features__item {
+    position: relative;
+    width: 240px;
+    padding-top: 260px;
+    text-align: center;
+  }
+  .features__item::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -40px;
+    display: block;
+    width: 310px;
+    height: 302px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+  }
+  .features__item--mood::before {
+    background-image: url("../img/iphone-screen-desktop-1.png");
+  }
+  .features__item--world::before {
+    background-image: url("../img/iphone-screen-desktop-2.png");
+  }
+  .features__item--friends::before {
+    background-image: url("../img/iphone-screen-desktop-3.png");
+  }
+  .features__title {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 1;
+  }
+  .features__desc {
+    margin-bottom: 37px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .features__wrapper {
+    min-height: 505px;
+  }
+  .features__wrapper::after {
+    display: none;
+  }
+  .features__research {
+    background-color: #f2f2f2;
+  }
+}
+.research {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+.research__wrapper {
+  position: relative;
+  width: 310px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.research__wrapper::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: -38px;
+  width: 238px;
+  height: 276px;
+  background-image: url("../img/timer.svg");
+  background-repeat: no-repeat;
+}
+.research__wrapper::after {
+  content: "24";
+  position: absolute;
+  left: -100%;
+  top: 18px;
+  display: block;
+  width: 202px;
+  height: 202px;
+  padding-left: 32px;
+  padding-top: 10px;
+  font-size: 96px;
+  line-height: 1.56;
+  font-weight: 700;
+  color: #d22856;
+  border: 13px solid #d22856;
+  border-radius: 50%;
+  transform: translatex(17px);
+}
+
+.research__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  padding-right: 50px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.research__desc {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+.research__link {
+  color: #d22856;
+  text-decoration: underline;
+}
+
+@media (min-width: 960px) {
+  .research {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .research__wrapper {
+    width: 565px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .research__wrapper::before {
+    top: -95px;
+    left: -65%;
+    width: 298px;
+    height: 345px;
+  }
+  .research__wrapper::after {
+    top: -25px;
+    left: -65%;
+    width: 253px;
+    height: 253px;
+    padding-left: 39px;
+    font-size: 120px;
+    border: 17px solid #d22856;
+    transform: translatex(20px);
+  }
+  .research__title {
+    margin-bottom: 25px;
+    padding-right: 50px;
+    line-height: 1;
+  }
+  .research__desc {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .research__link {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
 .reviews {
   position: relative;
   z-index: 1;
@@ -672,9 +1039,13 @@ img {
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.66;
+  line-height: 1.67;
   font-style: normal;
   color: #000000;
+}
+
+.reviews__author-info {
+  display: none;
 }
 
 .reviews__text {
@@ -684,10 +1055,97 @@ img {
   line-height: 2.14;
 }
 
+@media (min-width: 660px) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__author-wrapper {
+    order: 2;
+  }
+  .reviews__author {
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .reviews__author-info {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 30px;
+    line-height: 2.14;
+  }
+  .reviews__text {
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+@media (min-width: 960px) {
+  .reviews {
+    padding-top: 185px;
+    padding-bottom: 25px;
+  }
+  .reviews__slider {
+    position: relative;
+  }
+  .reviews__slider::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    display: block;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    transform: translateX(-50%);
+  }
+  .reviews__item {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .reviews__author {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .reviews__author-info {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+.slider {
+  position: relative;
+}
+
+.slider__btn {
+  display: none;
+}
+
 .slider__dots {
   text-align: center;
 }
 
+@media (min-width: 960px) {
+  .slider__btn {
+    position: absolute;
+    top: 20%;
+    display: block;
+  }
+  .slider__btn--prev {
+    left: 0;
+  }
+  .slider__btn--next {
+    right: 0;
+  }
+  .slider__dots {
+    display: none;
+  }
+}
 .price {
   padding-top: 122px;
   padding-bottom: 40px;
@@ -705,6 +1163,23 @@ img {
   display: block;
 }
 
+@media (min-width: 660px) {
+  .price {
+    padding-bottom: 60px;
+  }
+  .price__table {
+    margin: 0 auto;
+  }
+  .price__dots {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .price {
+    padding-top: 165px;
+    padding-bottom: 100px;
+  }
+}
 .price-table {
   text-transform: uppercase;
   border-collapse: separate;
@@ -720,14 +1195,14 @@ img {
 .price-table__header-name {
   display: block;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.67;
   font-weight: 700;
 }
 
 .price-table__header-price {
   display: block;
   font-size: 24px;
-  line-height: 1.66;
+  line-height: 1.67;
   font-weight: 300;
 }
 
@@ -736,6 +1211,16 @@ img {
   background-color: #ffffff;
 }
 
+@media (min-width: 660px) {
+  .price-table__header {
+    min-width: 160px;
+  }
+}
+@media (min-width: 960px) {
+  .price-table__header {
+    min-width: 235px;
+  }
+}
 .contacts {
   padding-top: 45px;
   line-height: 1.2;
@@ -781,6 +1266,10 @@ img {
   color: inherit;
 }
 
+.contacts__address {
+  font-style: normal;
+}
+
 .contacts__map {
   position: relative;
 }
@@ -797,16 +1286,76 @@ img {
   background-position: 50% 0;
 }
 
+@media (min-width: 660px) {
+  .contacts__slogan {
+    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .contacts__item {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .contacts__item--address {
+    width: 250px;
+  }
+  .contacts__term {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 960px) {
+  .contacts {
+    padding-top: 60px;
+  }
+  .contacts__slogan {
+    margin-bottom: 60px;
+    font-size: 50px;
+  }
+  .contacts__item {
+    margin-bottom: 25px;
+  }
+  .contacts__item--phone {
+    order: 1;
+  }
+  .contacts__item--email {
+    order: 3;
+  }
+  .contacts__item--address {
+    order: 2;
+  }
+  .contacts__term {
+    margin-bottom: 25px;
+  }
+}
+.map {
+  position: relative;
+}
+.map iframe {
+  display: none;
+}
+
 .map__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
   margin: 0 auto;
+  z-index: -1;
 }
 
 .contest {
-  padding-top: 30px;
+  padding-top: 45px;
 }
 
 .contest__desc {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   text-align: center;
   line-height: 2.14;
 }
@@ -823,7 +1372,7 @@ img {
 .contest__fieldset-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 42px 20px;
 }
 .contest__fieldset-wrapper:first-of-type {
   padding-top: 0;
@@ -843,7 +1392,7 @@ img {
 
 .contest__lable {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding-left: 20px;
   line-height: 2.14;
   text-transform: uppercase;
@@ -852,10 +1401,10 @@ img {
 
 .contest__input {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 12px 20px;
+  margin-bottom: 17px;
+  padding: 15px 20px;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.67;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
 }
@@ -883,7 +1432,7 @@ img {
   margin-top: 20px;
 }
 .contest__list :not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 }
 
 .contest__item {
@@ -894,7 +1443,7 @@ img {
 .contest__label-checkbox,
 .contest__textarea {
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.67;
 }
 
 .contest__textarea {
@@ -912,13 +1461,14 @@ img {
 
 .contest__legend {
   display: block;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: inherit;
   line-height: 2.14;
   text-transform: uppercase;
   text-align: center;
 }
-.contest__legend :first-child {
+
+.contest__legend-symbol {
   font-size: inherit;
   color: #d22856;
 }
@@ -978,11 +1528,11 @@ img {
 }
 
 .gallery {
-  padding-top: 30px;
+  padding-top: 45px;
 }
 
 .gallery__desc {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
   line-height: 2.14;
 }
@@ -1030,10 +1580,10 @@ img {
 }
 
 .photo__content {
-  padding-top: 10px;
+  padding-top: 16px;
   padding-bottom: 20px;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 17px;
   background-color: #f2f2f2;
 }
 
@@ -1056,7 +1606,7 @@ img {
 .photo__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .like {
@@ -1064,8 +1614,11 @@ img {
 }
 
 .like__btn {
+  margin: 0;
+  padding: 0;
   color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .like__link {
@@ -1080,15 +1633,17 @@ img {
 }
 
 .photo-upload {
+  padding-top: 20px;
   text-align: center;
 }
 
 .photo-upload__slogan {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   line-height: 2.14;
 }
 
 .photo-upload__wrapper {
+  padding-top: 20px;
   background-color: #f2f2f2;
 }
 

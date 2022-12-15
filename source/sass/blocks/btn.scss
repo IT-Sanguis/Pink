@@ -20,11 +20,13 @@
 
   cursor: pointer;
 
+
   &--border {
     @include btn-border;
 
     color: white;
   }
+
 
   &--upload {
     @include btn-border;

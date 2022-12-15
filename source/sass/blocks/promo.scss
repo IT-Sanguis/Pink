@@ -5,10 +5,11 @@
     padding-top: 100px;
 
     background-color: $color-bg--tertiary;
-    background-image: url("../img//bg-store@1x.jpg");
+    background-image: url("../img/bg-store-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% auto;
+    // background-size: 100% auto;
+    background-size: auto;
 }
 
 .promo__wrapper {
@@ -25,3 +26,20 @@
   color: $color--white;
 }
 
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/bg-store-tablet.jpg");
+    // background-position: center bottom;
+    background-position: center -44px;
+    // background-size: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/bg-store-desktop.jpg");
+    // background-position: center bottom;
+    background-position: center 0;
+    // background-size: auto;
+  }
+}

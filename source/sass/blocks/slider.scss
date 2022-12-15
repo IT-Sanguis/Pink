@@ -1,4 +1,5 @@
 .slider {
+  position: relative;
 }
 
 
@@ -6,6 +7,10 @@
 
   &--current {
   }
+}
+
+.slider__btn {
+  display: none;
 }
 
 
@@ -17,5 +22,27 @@
 .slider__dot {
 
   &--current {
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .slider__btn {
+    position: absolute;
+    top: 20%;
+    display: block;
+
+    &--prev {
+      left: 0;
+    }
+
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  .slider__dots {
+    display: none;
   }
 }

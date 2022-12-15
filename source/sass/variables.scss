@@ -5,6 +5,7 @@ $color--white: #ffffff;
 $color--black: #000000;
 $color--black-30: rgba($color--black, 0.3);
 $color--primary-10: rgba($color--primary, 0.1);
+$color--white-15: rgba($color--white, 0.15);
 $color--brand: #d22856;
 $color-btn: #2aab6d;
 $color-btn--hover: #1c9b5e;
@@ -17,8 +18,8 @@ $color-bg--nav-close: $color--black-30;
 
 
 $mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1200px;
+$tablet-width: 660px;
+$desktop-width: 960px;
 
 
 
