@@ -28,18 +28,35 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    min-height: 395px;
+    padding-top: 137px;
+
     background-image: url("../img/bg-store-tablet.jpg");
     // background-position: center bottom;
     background-position: center -44px;
     // background-size: auto;
   }
+
+  .promo__title {
+    font-size: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
+    min-height: 240px;
     background-image: url("../img/bg-store-desktop.jpg");
     // background-position: center bottom;
     background-position: center 0;
     // background-size: auto;
+  }
+
+  .promo__title {
+    // width: 600px;
+    padding-top: 35px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    margin-bottom: 0;
   }
 }

@@ -24,3 +24,14 @@
 .like__count {
   color: inherit;
 }
+
+@media (min-width: $tablet-width) {
+  .like {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .like__btn {
+    order: 1;
+  }
+}

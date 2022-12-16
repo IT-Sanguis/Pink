@@ -13,10 +13,42 @@
 
 .photo-upload__wrapper {
   padding-top: 20px;
+  padding-bottom: 30px;
 
   background-color: $color-bg--secondary;
 }
 
 
 .photo-upload__form {
+}
+
+
+@media (min-width: $tablet-width) {
+  .photo-upload {
+    padding-top: 45px;
+    margin-bottom: 30px;
+  }
+
+
+  .photo-upload__slogan {
+    margin-bottom: 70px;
+
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .photo-upload__wrapper {
+    padding-top: 57px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-upload {
+    padding-top: 0;
+  }
+
+  .photo-upload__wrapper {
+    width: 940px;
+  }
 }
