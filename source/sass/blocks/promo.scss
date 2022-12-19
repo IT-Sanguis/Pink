@@ -52,11 +52,16 @@
   }
 
   .promo__title {
-    // width: 600px;
     padding-top: 35px;
     padding-right: 200px;
     padding-bottom: 100px;
     padding-left: 200px;
     margin-bottom: 0;
+
+    &--contest {
+      padding-right: 86px;
+      padding-bottom: 100px;
+      padding-left: 86px;
+    }
   }
 }

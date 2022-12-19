@@ -616,6 +616,11 @@ img {
     padding-left: 200px;
     margin-bottom: 0;
   }
+  .promo__title--contest {
+    padding-right: 86px;
+    padding-bottom: 100px;
+    padding-left: 86px;
+  }
 }
 .promo-store {
   min-height: 670px;
@@ -1385,7 +1390,10 @@ img {
 .contest__fieldset-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 42px 20px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 42px;
+  padding-left: 20px;
 }
 .contest__fieldset-wrapper:first-of-type {
   padding-top: 0;
@@ -1393,17 +1401,26 @@ img {
 .contest__fieldset-wrapper:nth-child(even) {
   background-color: #f2f2f2;
 }
+.contest__fieldset-wrapper--achievements {
+  padding-bottom: 47px;
+}
+.contest__fieldset-wrapper--contacts {
+  padding-top: 33px;
+}
+.contest__fieldset-wrapper--apps {
+  padding-bottom: 47px;
+}
 
 .contest__fieldset {
   margin: 0;
   padding: 0;
   border: none;
 }
-.contest__fieldset .contest__input:last-of-type {
+.contest__fieldset :last-child {
   margin-bottom: 0;
 }
 
-.contest__lable {
+.contest__label {
   display: block;
   margin-bottom: 3px;
   padding-left: 20px;
@@ -1429,13 +1446,19 @@ img {
 .contest__subtitle {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 20px;
   text-align: center;
   line-height: 1.29;
   text-transform: uppercase;
   color: #d22856;
+}
+.contest__subtitle--contacts {
+  display: none;
+}
+.contest__subtitle--emoji {
+  margin-bottom: 15px;
 }
 
 .contest__list {
@@ -1444,12 +1467,28 @@ img {
   list-style: none;
   margin-top: 20px;
 }
-.contest__list :not(:last-child) {
-  margin-bottom: 52px;
+.contest__list--name {
+  margin-top: 0;
+}
+.contest__list--contacts {
+  margin-top: 0;
 }
 
 .contest__item {
+  margin-bottom: 52px;
   padding-left: 70px;
+}
+.contest__item--name {
+  margin-bottom: 18px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.contest__item--contacts {
+  margin-bottom: 17px;
+  padding-left: 0;
+}
+.contest__item--apps {
+  margin-bottom: 43px;
 }
 
 .contest__label-radio,
@@ -1461,7 +1500,7 @@ img {
 
 .contest__textarea {
   width: 100%;
-  padding: 20px;
+  padding: 15px 18px 30px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   resize: none;
@@ -1486,10 +1525,300 @@ img {
   color: #d22856;
 }
 
+.contest__sub-legend {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .contest {
+    padding-top: 95px;
+  }
+  .contest__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contest__desc {
+    margin-bottom: 70px;
+    padding: 0 55px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .contest__sub-desc {
+    display: block;
+  }
+  .contest__fieldset-wrapper {
+    width: 660px;
+    padding-bottom: 13px;
+  }
+  .contest__fieldset-wrapper:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .contest__fieldset-wrapper--name {
+    order: 1;
+    padding: 19px 20px;
+  }
+  .contest__fieldset-wrapper--achievements {
+    order: 3;
+    padding-top: 44px;
+  }
+  .contest__fieldset-wrapper--contacts {
+    order: 2;
+    padding-top: 45px;
+  }
+  .contest__fieldset-wrapper--apps {
+    order: 1;
+  }
+  .contest__fieldset-wrapper--emoji {
+    padding-top: 44px;
+    order: 3;
+  }
+  .contest__submit-wrapper {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 54px;
+    padding-bottom: 42px;
+  }
+  .contest__fieldset {
+    padding-bottom: 60px;
+    border: 2px solid #e5e5e5;
+  }
+  .contest__fieldset--name {
+    padding-bottom: 0;
+    border: none;
+  }
+  .contest__fieldset--contacts {
+    padding-bottom: 23px;
+  }
+  .contest__fieldset--achievements {
+    padding-bottom: 53px;
+  }
+  .contest__fieldset--emoji {
+    padding-right: 58px;
+    padding-left: 58px;
+    padding-bottom: 44px;
+  }
+  .contest__subtitle {
+    margin-bottom: 30px;
+  }
+  .contest__subtitle--contacts {
+    display: block;
+    margin-bottom: 35px;
+  }
+  .contest__subtitle--achievements {
+    margin-bottom: 28px;
+  }
+  .contest__subtitle--emoji {
+    margin-bottom: 37px;
+  }
+  .contest__list {
+    margin-bottom: 45px;
+  }
+  .contest__list--contacts {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+  .contest__item {
+    display: flex;
+    padding-left: 117px;
+  }
+  .contest__item--name {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
+  .contest__item--contacts {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-left: 0;
+  }
+  .contest__item--number::after {
+    content: "Т";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 62px;
+    height: 62px;
+    padding-top: 14px;
+    padding-left: 24px;
+    font-size: 23px;
+    color: #d22856;
+    background-color: #e5e5e5;
+  }
+  .contest__item--email::after {
+    content: "E";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 62px;
+    height: 62px;
+    padding-top: 14px;
+    padding-left: 24px;
+    font-size: 23px;
+    color: #d22856;
+    background-color: #e5e5e5;
+  }
+  .contest__label {
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  .contest__label--contacts {
+    order: 2;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .contest__input {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .contest__input--contacts {
+    order: 1;
+    padding-right: 60px;
+  }
+  .contest__textarea {
+    padding-bottom: 24px;
+  }
+  .contest__btn {
+    width: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+@media (min-width: 960px) {
+  .contest {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+  .contest__desc {
+    width: auto;
+    padding: 0 80px;
+  }
+  .contest__sub-desc {
+    display: inline;
+  }
+  .contest__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contest__fieldset-wrapper {
+    width: auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+  .contest__fieldset-wrapper:first-of-type {
+    padding-top: 13px;
+  }
+  .contest__fieldset-wrapper--contacts {
+    margin-top: 38px;
+    width: 100%;
+  }
+  .contest__fieldset-wrapper--achievements {
+    margin-top: 45px;
+    width: 100%;
+  }
+  .contest__fieldset-wrapper--emoji {
+    margin-top: 45px;
+    width: 100%;
+  }
+  .contest__fieldset {
+    width: 435px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contest__fieldset--contacts {
+    width: 100%;
+    padding-bottom: 9px;
+  }
+  .contest__fieldset--achievements {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .contest__fieldset--emoji {
+    width: 100%;
+  }
+  .contest__list--contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .contest__list--achievements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .contest__item--name {
+    margin-bottom: 52px;
+  }
+  .contest__item--contacts {
+    margin: 0;
+    padding: 0;
+    width: 375px;
+  }
+  .contest__item--achievements {
+    width: 260px;
+    padding-left: 60px;
+  }
+  .contest__item--achievements:nth-child(1) {
+    order: 1;
+  }
+  .contest__item--achievements:nth-child(2) {
+    order: 2;
+  }
+  .contest__item--achievements:nth-child(3) {
+    order: 1;
+  }
+  .contest__item--achievements:nth-child(4) {
+    order: 2;
+  }
+  .contest__item--achievements:nth-child(5) {
+    order: 1;
+  }
+  .contest__item--achievements:nth-child(6) {
+    order: 2;
+  }
+  .contest__input {
+    flex-grow: 0;
+  }
+  .contest__textarea {
+    height: 127px;
+  }
+  .contest__submit-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+  }
+  .contest__sub-legend {
+    display: inline;
+  }
+  .contest__subtitle--emoji {
+    margin-bottom: 33px;
+  }
+}
 .social {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .page-footer {

@@ -36,7 +36,7 @@
   <main class="page-main">
     <div class="promo promo-contest">
       <div class="promo__wrapper container">
-        <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="promo__title promo__title--contest">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </div>
     <section class="contest">
@@ -46,80 +46,103 @@
         <span class="contest__sub-desc">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="contest__fieldset-wrapper">
-          <fieldset class="contest__fieldset">
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--name">
+          <fieldset class="contest__fieldset contest__fieldset--name">
             <legend class="visually-hidden">Ваше полное имя</legend>
-            <label class="contest__lable" for="lastname">Фамилия:</label>
-            <input class="contest__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required>
-            <label class="contest__lable" for="firstname">Имя:</label>
-            <input class="contest__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *" required>
-            <label class="contest__lable" for="middlename">Отчество:</label>
-            <input class="contest__input" type="text" name="middlename" id="middlename" placeholder="Ну и отчество тоже">
-          </fieldset>
-        </div>
-        <div class="contest__fieldset-wrapper">
-          <fieldset class="contest__fieldset">
-            <legend class="contest__subtitle">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="contest__list">
-              <li class="contest__item">
-                <input class="visually-hidden" type="checkbox" name="achievements" id="selfie" checked>
-                <label class="contest__label-checkbox" for="selfie">Сделал селфи с акулой</label></li>
-              <li class="contest__item">
-                <input class="visually-hidden" type="checkbox" name="achievements" id="beach" checked>
-                <label class="contest__label-checkbox" for="beach">Обгорел на пляже</label></li>
-              <li class="contest__item">
-                <input class="visually-hidden" type="checkbox" name="achievements" id="Сhuck">
-                <label class="contest__label-checkbox" for="Сhuck">Видел Чака Норриса</label></li>
-              <li class="contest__item">
-                <input class="visually-hidden" type="checkbox" name="achievements" id="souvenirs">
-                <label class="contest__label-checkbox" for="souvenirs">Накупил сувениров</label></li>
-              <li class="contest__item">
-                <input class="visually-hidden" type="checkbox" name="achievements" id="tower" checked>
-                <label class="contest__label-checkbox" for="tower">Удержал башню</label></li>
-              <li class="contest__item">
-                <input class="visually-hidden" type="checkbox" name="achievements" id="hotel">
-                <label class="contest__label-checkbox" for="hotel">Разгромил отель</label></li>
+            <ul class="contest__list contest__list--name">
+              <li class="contest__item contest__item--name">
+                <label class="contest__label" for="lastname">Фамилия:</label>
+                <input class="contest__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required>
+              </li>
+              <li class="contest__item contest__item--name">
+                <label class="contest__label" for="firstname">Имя:</label>
+                <input class="contest__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *" required>
+              </li>
+              <li class="contest__item contest__item--name">
+                <label class="contest__label" for="middlename">Отчество:</label>
+                <input class="contest__input" type="text" name="middlename" id="middlename" placeholder="Ну и отчество тоже">
+              </li>
             </ul>
           </fieldset>
         </div>
-        <div class="contest__fieldset-wrapper">
-          <fieldset class="contest__fieldset">
-            <legend class="visually-hidden">Ваши контакты</legend>
-            <label class="contest__lable" for="number">Номер телефона</label>
-            <input class="contest__input" type="number" name="number" id="number" placeholder="Номер, пожалуйста">
-            <label class="contest__lable" for="email">Адрес почты</label>
-            <input class="contest__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--achievements">
+          <fieldset class="contest__fieldset contest__fieldset--achievements">
+            <legend class="contest__subtitle contest__subtitle--achievements">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="contest__list contest__list--achievements">
+              <li class="contest__item contest__item--achievements">
+                <input class="visually-hidden" type="checkbox" name="achievements" id="selfie" checked>
+                <label class="contest__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="contest__item contest__item--achievements">
+                <input class="visually-hidden" type="checkbox" name="achievements" id="beach" checked>
+                <label class="contest__label-checkbox" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="contest__item contest__item--achievements">
+                <input class="visually-hidden" type="checkbox" name="achievements" id="Сhuck">
+                <label class="contest__label-checkbox" for="Сhuck">Видел Чака Норриса</label>
+              </li>
+              <li class="contest__item contest__item--achievements">
+                <input class="visually-hidden" type="checkbox" name="achievements" id="souvenirs">
+                <label class="contest__label-checkbox" for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="contest__item contest__item--achievements">
+                <input class="visually-hidden" type="checkbox" name="achievements" id="tower" checked>
+                <label class="contest__label-checkbox" for="tower">Удержал башню</label>
+              </li>
+              <li class="contest__item contest__item--achievements">
+                <input class="visually-hidden" type="checkbox" name="achievements" id="hotel">
+                <label class="contest__label-checkbox" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
-        <div class="contest__fieldset-wrapper">
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--contacts">
+          <fieldset class="contest__fieldset contest__fieldset--contacts">
+            <legend class="contest__subtitle contest__subtitle--contacts">Контактная информация</legend>
+            <ul class="contest__list contest__list--contacts">
+              <li class="contest__item contest__item--contacts contest__item--number">
+                <label class="contest__label contest__label--contacts" for="number">Номер телефона</label>
+                <input class="contest__input contest__input--contacts" type="number" name="number" id="number" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contest__item contest__item--contacts contest__item--email">
+                <label class="contest__label contest__label--contacts" for="email">Адрес почты</label>
+                <input class="contest__input contest__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--apps">
           <fieldset class="contest__fieldset">
             <legend class="contest__subtitle">С каким приложением путешествовали?</legend>
             <ul class="contest__list">
-              <li class="contest__item">
+              <li class="contest__item contest__item--apps">
                 <input class="visually-hidden" type="radio" name="app" id="ios">
                 <label class="contest__label-radio" for="ios">Pink для iOS</label>
               </li>
-              <li class="contest__item">
+              <li class="contest__item contest__item--apps">
                 <input class="visually-hidden" type="radio" name="app" id="android">
                 <label class="contest__label-radio" for="android">Pink на Android</label>
               </li>
-              <li class="contest__item">
+              <li class="contest__item contest__item--apps">
                 <input class="visually-hidden" type="radio" name="app" id="windows">
                 <label class="contest__label-radio" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="contest__fieldset-wrapper">
-          <fieldset class="contest__fieldset">
-            <legend class="contest__subtitle">Опишите свои эмоции</legend>
+        <div class="contest__fieldset-wrapper contest__fieldset-wrapper--emoji">
+          <fieldset class="contest__fieldset contest__fieldset--emoji">
+            <legend class="contest__subtitle contest__subtitle--emoji">Опишите свои эмоции</legend>
             <textarea class="contest__textarea" name="emoji" id="emoji" cols="25" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
         </div>
         <div class="contest__submit-wrapper container">
           <button class="contest__btn btn btn--rectangular" type="submit">Отправить форму</button>
           <small class="contest__legend">
-            <span class="contest__legend-symbol">*</span> — обязательные поля
+            <span class="contest__legend-symbol">*</span>
+             — обязательные
+             <span class="contest__sub-legend"> для заполнения </span>
+             поля
           </small>
         </div>
       </form>
