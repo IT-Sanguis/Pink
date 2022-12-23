@@ -5,15 +5,22 @@
 
 .like__btn {
   @include reset;
-  color: inherit;
+
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  // color: inherit;
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
 
   border: none;
-  // border-color: inherit;
 
   cursor: pointer;
 }
 
 .like__link {
+  padding-left: 15px;
   font-size: 12px;
   line-height: 2;
   text-transform: uppercase;
@@ -29,9 +36,16 @@
   .like {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .like__btn {
+    // display: block;
+    padding-right: 25px;
     order: 1;
+  }
+
+  .like__link {
+    padding-left: 0;
   }
 }

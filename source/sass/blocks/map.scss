@@ -16,3 +16,15 @@
   margin: 0 auto;
   z-index: -1;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 378px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 510px;
+  }
+}

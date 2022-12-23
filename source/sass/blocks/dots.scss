@@ -1,0 +1,28 @@
+.dots {
+  display: block;
+  text-align: center;
+}
+
+
+.dots__dot {
+  @include reset;
+
+  width: 6px;
+  height: 6px;
+  margin: 8px;
+
+
+  background-color: $color--primary-30;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+
+.dots__dot--current {
+  background-color: $color--white;
+
+  box-shadow: 0 0 0 3px $color--primary;
+}

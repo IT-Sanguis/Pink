@@ -155,11 +155,46 @@
     padding-left: 0;
   }
 
+  &--achievements {
+    padding-left: 0;
+  }
+
 
   &--apps {
     margin-bottom: 43px;
+    padding-left: 0;
   }
 }
+
+.contest__input-checkbox:checked+.contest__label-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 9px;
+
+  width: 20px;
+  height: 11px;
+
+  border-left: 2px solid $color--brand;
+  border-bottom: 2px solid $color--brand;
+
+  transform: rotate(-45deg);
+}
+
+.contest__input-radio:checked+.contest__label-radio::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 13px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $color--brand;
+
+  border-radius: 50%;
+}
+
 
 .contest__label-radio,
 .contest__label-checkbox,
@@ -170,10 +205,52 @@
 
 
 .contest__label-checkbox {
+  position: relative;
+
+  padding-left: 70px;
+
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 39px;
+    height: 39px;
+
+    background-color: $color--white;
+
+    border: 2px solid $color-btn--disabled;
+    border-radius: 2px;
+  }
 }
 
 
 .contest__label-radio {
+  position: relative;
+
+  padding-left: 69px;
+
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+
+    width: 39px;
+    height: 39px;
+
+    background-color: $color--white;
+
+    border: 2px solid $color-btn--disabled;
+    border-radius: 50%;
+  }
 }
 
 
@@ -189,7 +266,7 @@
 
 
 .contest__submit-wrapper {
-
+  margin-bottom: 14px;
 }
 
 
@@ -298,7 +375,8 @@
     align-items: baseline;
 
     margin-top: 54px;
-    padding-bottom: 42px;
+    margin-bottom: 48px;
+    // padding-bottom: 30px;
   }
 
 
@@ -377,6 +455,13 @@
       padding-left: 0;
     }
 
+    &--achievements {
+      padding-left: 58px;
+    }
+
+    &--apps {
+      padding-left: 58px;
+    }
 
     &--contacts {
       position: relative;
@@ -387,47 +472,46 @@
 
       margin-bottom: 25px;
       padding-left: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+
+
+        display: block;
+        width: 60px;
+        height: 60px;
+        padding-top: 14px;
+        padding-left: 24px;
+
+        background-color: $color-btn--disabled;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
-// Отрефакторить
     &--number::after {
-      content: "Т";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      display: block;
-      width: 62px;
-      height: 62px;
-      padding-top: 14px;
-      padding-left: 24px;
-
-      font-size: 23px;
-      color: $color--brand;
-
-      background-color: $color-btn--disabled;
+      background-image: url("../img/icon-phone.svg");
+      background-size: 20px 19px;
     }
 
 
     &--email::after {
-      content: "E";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      display: block;
-      width: 62px;
-      height: 62px;
-      padding-top: 14px;
-      padding-left: 24px;
-
-      font-size: 23px;
-      color: $color--brand;
-
-      background-color: $color-btn--disabled;
+      background-image: url("../img/icon-mail.svg");
+      background-size: 18px 13px;
     }
+  }
+
+
+  .contest__label-radio {
+    padding-left: 60px;
+  }
+
+
+  .contest__label-checkbox {
+    padding-left: 60px;
   }
 
 
@@ -463,6 +547,7 @@
 
   .contest__btn {
     width: auto;
+    margin-bottom: 0;
     padding-left: 55px;
     padding-right: 55px;
   }
@@ -585,7 +670,7 @@
 
     &--achievements {
       width: 260px;
-      padding-left: 60px;
+      padding-left: 0;
 
       &:nth-child(1) {order: 1;}
       &:nth-child(2) {order: 2;}
@@ -596,6 +681,7 @@
     }
 
     &--apps {
+      padding-left: 73px;
     }
   }
 
@@ -613,6 +699,7 @@
     padding-left: 0;
     padding-right: 0;
     margin-top: 50px;
+    margin-bottom: 0;
   }
 
   .contest__sub-legend {

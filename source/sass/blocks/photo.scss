@@ -116,6 +116,19 @@
         margin-bottom: 10px;
       }
 
+      .like {
+        padding-right: 9px;
+      }
+
+      .like__btn {
+        padding-right: 13px;
+      }
+
+      .like__link {
+        margin-right: 17px;
+      }
+
+
       figcaption {
         width: $tablet-width - 40px;
         flex-direction: row;

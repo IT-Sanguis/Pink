@@ -4,7 +4,7 @@
 
   min-height: 340px;
   padding-top: 43px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
 
 .reviews__text {
   @include reset;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   line-height: 2.14;
 }
 
@@ -70,7 +70,7 @@
   .reviews__author-info {
     @include reset;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     line-height: 2.14;
   }

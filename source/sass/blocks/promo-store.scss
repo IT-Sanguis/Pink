@@ -59,18 +59,28 @@
 
 
 .promo-store__link {
+  display: block;
+  width: 56px;
+  height: 56px;
+
   color: inherit;
+
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 
 
   &--iphone {
+    background-image: url("../img/iphone.svg");
   }
 
 
   &--android {
+    background-image: url("../img/android.svg");
   }
 
 
-  &--windows {
+  &--windows-phone {
+    background-image: url("../img/windows-phone.svg");
   }
 }
 
@@ -112,13 +122,21 @@
     @include reset;
 
     display: block;
-    padding: 0 35px;
+    padding: 0 31px;
 
     font-size: 40px;
     line-height: 1.2;
     font-weight: 300;
   }
 
+  .promo-store__btn {
+    margin-bottom: 47px;
+  }
+
+  .promo-store__list {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
 
   .promo-store__desc {
     font-size: 18px;
@@ -159,10 +177,15 @@
 
   .promo-store__btn {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 68px;
 
     font-size: 21px;
     line-height: 0.86;
     padding: 15px 20px;
   }
+
+  .promo-store__list {
+    margin-bottom: 55px;
+  }
+
 }

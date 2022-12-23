@@ -30,7 +30,7 @@
   color: $color--brand;
 
   border: 2px solid $color--brand;
-  background-image: url(../img/brand_add_img.svg);
+  background-image: url(../img/brand-add-img.svg);
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: center 60px;
@@ -51,13 +51,21 @@
 .photo-editor__tools {
   position: relative;
   @include reset-list;
-  padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // padding-bottom: 25px;
+  padding-bottom: 38px;
+  margin-bottom: 25px;
 
   &::after {
     content: "";
     position: absolute;
     left: -20px;
-    bottom: 0;
+    // bottom: 0;
+    bottom: -28px;
 
     width: calc(100% + 20px * 2);
     height: 1px;
@@ -67,16 +75,38 @@
 
 
 .photo-editor__tool {
+  &--active {
+
+    .photo-editor__range {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .photo-editor__icon {
+      fill: $color--brand;
+    }
+  }
 }
 
 .photo-editor__tool-btn {
+  background-color: transparent;
+  border: none;
+
   &--crop {}
   &--fill {}
   &--contrast {}
 }
 
+.photo-editor__icon {
+  fill: $color--black-30;
+}
+
 
 .photo-editor__range {
+  display: none;
 }
 
 
@@ -112,9 +142,13 @@
   }
 
   .photo-editor__tools {
+    display: block;
     // position: relative;
     // @include reset-list;
     // padding-bottom: 25px;
+      // padding-bottom: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
 
     &::after {
       display: none;
@@ -128,8 +162,16 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding-top: 9px;
-    padding-bottom: 40px;
+    padding-top: 7px;
+    padding-bottom: 37px;
+
+    &--active {
+
+      .photo-editor__range {
+        position: static;
+        transform: translateX(0);
+      }
+    }
 
     &::after {
       content: "";
@@ -152,10 +194,23 @@
 
     &--crop {}
     &--fill {}
-    &--contrast {}
+    &--contrast {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .photo-editor__icon {
+    width: 24px;
+    height: 24px;
+
+    fill: $color--brand;
   }
 
   .photo-editor__range {
+    display: block;
     flex-grow: 1;
   }
 
@@ -179,6 +234,23 @@
   .photo-editor__control {
     width: 410px;
     padding-left: 0;
+  }
+
+  .photo-editor__tool-btn {
+
+    &--crop {}
+    &--fill {}
+    &--contrast {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .photo-editor__icon {
+    width: 48px;
+    height: 48px;
   }
 
   .photo-editor__btns {

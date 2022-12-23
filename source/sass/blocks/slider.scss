@@ -15,31 +15,37 @@
 
 
 .slider__dots {
-  text-align: center;
-}
-
-
-.slider__dot {
-
-  &--current {
-  }
 }
 
 
 @media (min-width: $desktop-width) {
   .slider__btn {
     position: absolute;
-    top: 20%;
+    top: 15%;
+    z-index: 1;
     display: block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-top: 2px solid $color--primary;
+    border-right: 2px solid $color--primary;
+    opacity: 0.3;
+    // border-radius: 2px;
+    cursor: pointer;
 
     &--prev {
       left: 0;
+      transform: rotate(-135deg);
     }
 
 
     &--next {
       right: 0;
+      transform: rotate(45deg);
     }
+
+
   }
 
   .slider__dots {
