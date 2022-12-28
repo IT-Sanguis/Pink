@@ -33,4 +33,17 @@
 
   &--youtube {
   }
+
+  &:hover,
+  &:focus {
+    border: 3px solid $color--primary;
+  }
+
+  &:active {
+    border: 3px solid $color--primary-10;
+
+    path {
+      fill: $color--brand-30;
+    }
+  }
 }

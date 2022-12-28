@@ -49,6 +49,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    min-height: 0;
+    padding-bottom: 10px;
+  }
 
   .reviews__item {
     display: flex;
@@ -106,7 +110,7 @@
       width: 79px;
       height: 63px;
 
-      background-image: url("../img/quotes.svg");
+      background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       background-position: center top;
       background-size: auto;

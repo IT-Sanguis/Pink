@@ -1,10 +1,11 @@
 .photo {
-
-
   &--full {
-    width: 100%;
     position: relative;
+
+    width: 100%;
     padding: 0;
+
+    overflow: hidden;
 
     .photo__link {
       position: relative;
@@ -33,10 +34,17 @@
       }
     }
 
-    // img {
-    //   display: block;
-    //   height: 100%;
-    // }
+
+    img {
+      position: relative;
+      left: 50%;
+
+      max-width: inherit;
+      margin: 0;
+
+      transform: translateX(-50%);
+    }
+
 
     figcaption {
       width: 280px;
@@ -100,29 +108,35 @@
     &--full {
       margin-bottom: 50px;
 
+
       .photo__link {
 
         &::before {
         }
       }
 
+
       .photo__content {
         padding-bottom: 15px;
 
       }
+
 
       .photo__text {
         order: 1;
         margin-bottom: 10px;
       }
 
+
       .like {
         padding-right: 9px;
       }
 
+
       .like__btn {
         padding-right: 13px;
       }
+
 
       .like__link {
         margin-right: 17px;

@@ -1,8 +1,14 @@
 .map {
   position: relative;
 
+  height: 200px;
+
+  overflow: hidden;
+
+
   iframe {
-    display: none;
+    // display: none;
+    width: 100%;
   }
 }
 
@@ -19,12 +25,12 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    min-height: 378px;
+    height: 376px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
-    min-height: 510px;
+    height: 500px;
   }
 }

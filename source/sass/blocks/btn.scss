@@ -25,6 +25,20 @@
     @include btn-border;
 
     color: white;
+
+
+    &:hover, &:focus {
+      color: $color--brand;
+
+      background-color: $color-bg--white;
+    }
+
+
+    &:active {
+      color: $color--brand-30;
+
+      background-color: $color-bg--white;
+    }
   }
 
 
@@ -33,7 +47,19 @@
 
     color: $color--brand;
 
-    border-color: $color--brand;
+    border-color: $color-bg--brand;
+
+
+    &:hover, &:focus {
+      color: $color--white;
+
+      background-color: $color-bg--brand;
+    }
+
+
+    &:active {
+      color: $color--white-30;
+    }
   }
 
 
@@ -44,8 +70,36 @@
 
     border-color: $color-bg--primary;
     opacity: 0.1;
+
+
+    &:hover, &:focus {
+      opacity: 0.3;
+    }
+
+
+    &:active {
+      color: $color--white-30;
+      background-color: $color-bg--primary;
+    }
+  }
+
+
+  &--rectangular {
+    &:hover, &:focus {
+      border: solid 2px $color-btn--hover;
+      background-color: $color-btn--hover;
+    }
+
+
+    &:active {
+      color: $color--white-30;
+    }
+
+    &:disabled {
+      background-color: $color--disabled;
+      border-color: $color--disabled;
+    }
   }
 }
 
-// .btn--rectangular {
-// }
+

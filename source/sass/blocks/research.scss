@@ -20,7 +20,7 @@
     width: 238px;
     height: 276px;
 
-    background-image: url("../img/timer.svg");
+    background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
   }
 
@@ -67,8 +67,16 @@
 .research__link {
   color: $color--brand;
   text-decoration: underline;
-}
 
+  &:hover,
+  &:focus {
+    color: $color--primary;
+  }
+
+  &:active {
+    color: $color--brand-30;
+  }
+}
 
 
 @media (min-width: $desktop-width) {

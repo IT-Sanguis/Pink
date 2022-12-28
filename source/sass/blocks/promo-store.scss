@@ -15,10 +15,17 @@
     width: 100%;
     height: 100%;
 
-    background-image: url("../img/iphone-5-in-hand-mobile.png");
+    background-image: url("../img/iphone-hand-mobile@1x-min.png");
     background-repeat: no-repeat;
-    background-position: center 45%;
+    // background-position: center 45%;
     background-size: auto;
+    background-position: 50% 39%;
+    transform: translatex(-10%);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: 258px auto;
+    }
   }
 }
 
@@ -28,7 +35,7 @@
   width: 100%;
   padding-bottom: 20px;
 
-  background-color: $color-bg--primary;
+  background-color: $color-bg--tertiary;
 }
 
 
@@ -39,7 +46,7 @@
 
 .promo-store__btn {
   margin-top: 30px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 
@@ -70,17 +77,17 @@
 
 
   &--iphone {
-    background-image: url("../img/iphone.svg");
+    background-image: url("../img/logo-apple.svg");
   }
 
 
   &--android {
-    background-image: url("../img/android.svg");
+    background-image: url("../img/logo-android.svg");
   }
 
 
   &--windows-phone {
-    background-image: url("../img/windows-phone.svg");
+    background-image: url("../img/logo-microsoft.svg");
   }
 }
 
@@ -99,8 +106,14 @@
 
 
     &::before {
-      background-image: url("../img/iphone-5-in-hand-tablet.png");
+      background-image: url("../img/iphone-hand-tablet@1x-min.png");
       background-position: center 100%;
+      transform: translatex(0);
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: 700px auto;
+      }
     }
   }
 
@@ -136,6 +149,7 @@
   .promo-store__list {
     padding-left: 43px;
     padding-right: 43px;
+    margin-bottom: 37px;
   }
 
   .promo-store__desc {
@@ -152,12 +166,17 @@
 
 
     &::before {
-      background-image: url("../img/iphone-5-in-hand-desktop.png");
+      background-image: url("../img/iphone-hand-desktop@1x.png");
       background-position: 67% 0;
       width: 560px;
       height: 645px;
       left: 50%;
       transform: translateX(calc(-50% + 155px));
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
     }
   }
 

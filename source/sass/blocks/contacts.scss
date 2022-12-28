@@ -26,26 +26,8 @@
 }
 
 
-.contacts__term {
-  @include reset;
-  margin-bottom: 2px;
-
-  font-size: 18px;
-  font-weight: 700;
-}
-
-
-.contacts__definition {
-  @include reset;
-  margin-bottom: 25px;
-
-  font-size: 24px;
-  font-weight: 300;
-  color: $color--brand;
-}
-
-
 .contacts__item {
+  margin-bottom: 25px;
 
   &--phone {
   }
@@ -58,9 +40,37 @@
 }
 
 
+.contacts__term {
+  @include reset;
+  margin-bottom: 2px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.contacts__definition {
+  @include reset;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: $color--brand;
+}
+
+
 .contacts__link {
-  font: inherit;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color--primary;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $color--primary-30;
+    text-decoration: none;
+  }
 }
 
 
@@ -78,19 +88,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    // right: 0;
+    right: 0;
 
     display: block;
-    width: 100%;
-    height: 30px;
+    // width: 100%;
+    height: 33px;
 
-    background-image: url("../img/triangle-white-map.svg");
+    background-image: url("../img/bg-triangle-white-map.svg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+    background-size: 100% 33px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding-bottom: 30px;
+  }
+
   .contacts__slogan {
     margin-bottom: 45px;
 
@@ -110,10 +125,11 @@
 
   .contacts__item {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 
     &--address {
       width: 250px;
+      margin-bottom: 0;
     }
   }
 
@@ -124,7 +140,13 @@
 
 
   .contacts__map {
-    margin-bottom: -40px;
+    margin-bottom: 0;
+
+    &::before {
+      height: 67px;
+
+      background-size: 100% 67px;
+    }
   }
 }
 
@@ -132,6 +154,10 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding-top: 60px;
+  }
+
+  .contacts__wrapper {
+    padding-bottom: 0;
   }
 
 
@@ -164,7 +190,13 @@
   }
 
   .contacts__map {
-    margin-bottom: -75px;
+    // margin-bottom: -75px;
+
+    &::before {
+      height: 100px;
+
+      background-size: 100% 100px;
+    }
   }
 
 }

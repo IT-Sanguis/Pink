@@ -18,6 +18,15 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color--primary-60;
+  }
+
+  &:active {
+    background-color: $color--primary-10;
+  }
 }
 
 

@@ -34,6 +34,15 @@
     // border-radius: 2px;
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
     &--prev {
       left: 0;
       transform: rotate(-135deg);

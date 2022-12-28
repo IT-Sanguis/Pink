@@ -12,6 +12,30 @@
 .page-footer__logo-link {
   display: inline-block;
   margin-bottom: 40px;
+
+  &:hover .page-footer__logo,
+  &:focus .page-footer__logo {
+    fill: $color--brand;
+
+    .logo__star {
+      fill: $color--primary;
+    }
+  }
+
+
+  &:active {
+    .logo__sign {
+      fill: $color--primary;
+    }
+
+    .logo__star {
+      fill: $color--brand;
+    }
+
+    .page-footer__logo {
+      opacity: 0.1;
+    }
+  }
 }
 
 
@@ -48,6 +72,15 @@
   width: 30px;
   vertical-align: middle;
   height: 30px;
+
+  &:hover,
+  &:focus {
+    path {fill: $color--primary;}
+  }
+
+  &:active path {
+    fill: $color--primary-30;
+  }
 }
 
 @media (min-width: $tablet-width) {

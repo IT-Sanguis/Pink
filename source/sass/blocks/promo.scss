@@ -5,11 +5,17 @@
     padding-top: 100px;
 
     background-color: $color-bg--tertiary;
-    background-image: url("../img/bg-store-mobile.jpg");
+    background-image: url("../img/bg-back-mobile@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     // background-size: 100% auto;
-    background-size: auto;
+    // background-size: auto;
+    background-size: 700px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 700px auto;
+    }
 }
 
 .promo__wrapper {
@@ -31,10 +37,15 @@
     min-height: 395px;
     padding-top: 137px;
 
-    background-image: url("../img/bg-store-tablet.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     // background-position: center bottom;
     background-position: center -44px;
-    // background-size: auto;
+    background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .promo__title {
@@ -45,10 +56,15 @@
 @media (min-width: $desktop-width) {
   .promo {
     min-height: 240px;
-    background-image: url("../img/bg-store-desktop.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     // background-position: center bottom;
     background-position: center 0;
     // background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 
   .promo__title {
