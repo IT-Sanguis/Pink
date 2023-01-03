@@ -24,7 +24,7 @@
   &--border {
     @include btn-border;
 
-    color: white;
+    color: $color--white;
 
 
     &:hover, &:focus {

@@ -30,7 +30,7 @@
   color: $color--brand;
 
   border: 2px solid $color--brand;
-  background-image: url(../img/bg-add-img.svg);
+  background-image: url("../img/bg-add-img.svg");
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: center 60px;
@@ -382,14 +382,10 @@
 
 
   .photo-editor__tool {
-    margin-top: -7px;
-  }
-
-
-  .photo-editor__tool {
     position: static;
 
-    padding-top: 0px;
+    margin-top: -7px;
+    padding-top: 0;
     padding-bottom: 20px;
   }
 

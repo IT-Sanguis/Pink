@@ -20,7 +20,7 @@
     // background-position: center 45%;
     background-size: auto;
     background-position: 50% 39%;
-    transform: translatex(-10%);
+    transform: translateX(-10%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-mobile@2x.png");
@@ -108,7 +108,7 @@
     &::before {
       background-image: url("../img/iphone-hand-tablet@1x-min.png");
       background-position: center 100%;
-      transform: translatex(0);
+      transform: translateX(0);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");

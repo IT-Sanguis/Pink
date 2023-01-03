@@ -85,9 +85,6 @@
   }
 
 
-  .features__wrapper {
-    padding-top: 98px;
-  }
 
   .features__slogan-wrapper {
     margin-bottom: 55px;
@@ -116,6 +113,7 @@
 
   .features__wrapper {
     min-height: 505px;
+    padding-top: 98px;
 
     &::after {
       position: absolute;

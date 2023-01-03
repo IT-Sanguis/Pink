@@ -73,12 +73,17 @@
   vertical-align: middle;
   height: 30px;
 
-  &:hover,
-  &:focus {
-    path {fill: $color--primary;}
+  svg {
+    fill: $color--brand;
   }
 
-  &:active path {
+
+  &:hover,
+  &:focus {
+    svg {fill: $color--primary;}
+  }
+
+  &:active svg {
     fill: $color--primary-30;
   }
 }
