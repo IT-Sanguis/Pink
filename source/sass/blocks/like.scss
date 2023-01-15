@@ -9,13 +9,15 @@
   display: inline-block;
   width: 13px;
   height: 13px;
+  padding: 12px;
   // color: inherit;
+
+  vertical-align: middle;
 
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-color: transparent;
-
-
+  background-position: left;
 
   border: none;
 
@@ -23,11 +25,13 @@
 }
 
 .like__link {
-  padding-left: 15px;
+  padding: 4px;
+
   font-size: 12px;
   line-height: 2;
   text-transform: uppercase;
   color: inherit;
+  vertical-align: middle;
 }
 
 
@@ -44,7 +48,7 @@
 
   .like__btn {
     // display: block;
-    padding-right: 25px;
+    // padding-right: 25px;
     order: 1;
   }
 

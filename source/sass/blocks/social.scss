@@ -23,6 +23,10 @@
   border: 3px solid $color--primary-10;
   border-radius: 50%;
 
+  svg {
+    fill: $color--brand;
+  }
+
   &--twitter {
   }
 
@@ -34,6 +38,8 @@
   &--youtube {
   }
 
+
+
   &:hover,
   &:focus {
     border: 3px solid $color--primary;
@@ -42,7 +48,7 @@
   &:active {
     border: 3px solid $color--primary-10;
 
-    path {
+    svg {
       fill: $color--brand-30;
     }
   }

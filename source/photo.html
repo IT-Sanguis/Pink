@@ -7,10 +7,13 @@
   <meta name="keywords" content="Мобильное приложение «Pink»">
   <meta name="description" content="Мобильное приложение «Pink»">
   <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
   <title>«Pink»</title>
 </head>
 
@@ -23,7 +26,7 @@
   <header class="page-header page-header--js-disabled">
   <!-- <header class="page-header"> -->
     <div class="page-header__wrapper ">
-      <a class="page-header__logo-link" href="#">
+      <a class="page-header__logo-link" href="index.html">
         <svg class="page-header__logo logo" xmlns="http://www.w3.org/2000/svg" width="147" height="40" aria-labelledby="logo" role="img">
           <title id="logo">Логотип «Pink»</title>
           <g class="logo__sign">
@@ -287,6 +290,7 @@
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </button>
+                <label class="visually-hidden" for="cropRange">Crop</label>
                 <input class="photo-editor__range" type="range" name="cropRange" min="1" max="100" value="85" id="cropRange">
               </li>
               <li class="photo-editor__tool">
@@ -300,6 +304,7 @@
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </button>
+                <label class="visually-hidden" for="fillRange">Fill</label>
                 <input class="photo-editor__range" type="range" name="fillRange" min="1" max="100" value="85" id="fillRange">
               </li>
               <li class="photo-editor__tool">
@@ -313,6 +318,7 @@
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </button>
+                <label class="visually-hidden" for="contrastRange">Contrast</label>
                 <input class="photo-editor__range" type="range" name="contrastRange" min="1" max="100" value="85" id="contrastRange">
               </li>
             </ul>
@@ -383,7 +389,7 @@
     </ul>
     <div class="page-footer__copyright">
       <span class="page-footer__copyright-text">Разработано</span>
-      <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru">
+      <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru" title="HTML Academy">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 17.73 22.5" width="27" height="34">
           <path fill="#D22856" d="M8.95 0h-.09L0 .94v16.29l8.86 5.27 8.86-5.27V.94L8.95 0zm7.65 16.56-7.74 4.59-7.74-4.59V9.9l7.7 4.59v.81l-5.27-3.15v.81l5.31 3.2v.85l-5.31-3.15v.81l5.31 3.15 5.36-3.19v-3.42l2.38-1.44v6.79zm-.04-7.65-2.12 1.26-.99.59-4.63-2.75v.81l3.96 2.39h-.04l-.09.05-.59.32-3.28-1.95v.81l2.61 1.53-.63.4-1.94-1.17v.81l1.31.76-1.3.77L1.17 9l7.65-4.59 7.74 4.5zm.04-.81L8.82 3.51 1.12 8.1V1.98l7.74-.81 7.74.81V8.1z"/>
         </svg> -->

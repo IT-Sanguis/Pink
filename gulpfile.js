@@ -5,6 +5,7 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass")(require("sass"));
 const posthtml = require("gulp-posthtml");
+const htmlmin = require("gulp-htmlmin");
 const include = require("posthtml-include");
 const svgstore = require("gulp-svgstore");
 const csso = require("gulp-csso");
@@ -77,6 +78,7 @@ function html() {
   .pipe(posthtml([
     include()
     ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 }
 
@@ -84,8 +86,9 @@ function html() {
 function images() {
   return gulp.src("build/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.mozjpeg({quality: 75, progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.mozjpeg({quality: 70, progressive: true}),
+    // imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
  ]))
  .pipe(gulp.dest("build/img"));
@@ -105,7 +108,7 @@ function exportWebP() {
   return gulp.src("build/img/**/*.{png,jpg}")
     .pipe(imagemin([
       webp({
-        quality: 75
+        quality: 80
       })
     ]))
     .pipe(extReplace(".webp"))

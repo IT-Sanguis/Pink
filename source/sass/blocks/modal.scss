@@ -1,26 +1,56 @@
 .modal {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  width: $mobile-width;
+
   text-align: center;
 
+  background-color: $color-bg--white;
 
-  &--success .modal__btn-wrapper {
-    background-color: $color-bg--secondary;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 7px 15px 0 $color--black-15;
+
+
+  &--success {
+    // display: block;
+
+    .modal__btn-wrapper {
+      background-color: $color-bg--secondary;
+    }
   }
 
 
   &--failure {
+    // display: block;
+
+    .modal__content-wrapper {
+      padding-bottom: 0;
+    }
+
+    .modal__btn-wrapper {
+      padding-top: 40px;
+      padding-bottom: 45px;
+    }
 
   }
 }
 
 
 .modal__content-wrapper {
-  padding-top: 40px;
+  margin: 0 auto;
+  padding: 40px 20px 30px;
 }
 
 
 .modal__title {
   @include reset;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 18px;
   line-height: 1.33;
@@ -30,15 +60,76 @@
 
 .modal__desc {
   @include reset;
-  margin-bottom: 10px;
 }
 
-.modal__btn-wrapper {
-  padding: 40px 20px;
 
+.modal__btn-wrapper {
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
 
 .modal__btn {
   width: 100%;
+}
+
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: calc($tablet-width - 200px);
+  }
+
+  .modal__title {
+    margin-bottom: 20px;
+    padding: 0 80px;
+
+    font-size: 30px;
+  }
+
+  .modal__desc {
+    padding: 0 50px;
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .modal__btn-wrapper {
+    padding: 50px 80px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: calc($desktop-width - 180px);
+
+    &--failure {
+
+      .modal__content-wrapper {
+        padding-bottom: 60px;
+      }
+
+      .modal__btn-wrapper {
+        padding: 50px 240px;
+
+        background-color: $color-bg--secondary;
+      }
+    }
+  }
+
+  .modal__content-wrapper {
+    padding-bottom: 35px;
+  }
+
+  .modal__title {
+    margin-bottom: 25px;
+  }
+
+  .modal__desc {
+    padding: 0 170px;
+  }
+
+  .modal__btn-wrapper {
+    padding: 50px 160px;
+  }
 }
