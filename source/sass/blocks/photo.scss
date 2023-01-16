@@ -2,14 +2,12 @@
   &--full {
     position: relative;
 
-    width: 100%;
     padding: 0;
 
     overflow: hidden;
 
     .photo__link {
       position: relative;
-      // z-index: -1;
 
       &::before {
         content: "Панорама дня";
@@ -54,10 +52,6 @@
 }
 
 
-.photo__link {
-}
-
-
 .photo__img {
   margin: 0 auto;
 }
@@ -97,56 +91,51 @@
 }
 
 
-.photo__like {
-}
-
-
 @media (min-width: $tablet-width) {
-
   .photo {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
 
     &--full {
-      margin-bottom: 50px;
+        margin-bottom: 50px;
+        width: auto;
 
 
-      .photo__link {
+        .photo__link::before {
+            top: 58px;
+            right: calc(50% - 312px);
+          }
 
-        &::before {
+
+        .photo__content {
+          padding-bottom: 15px;
         }
-      }
 
 
-      .photo__content {
-        padding-bottom: 15px;
-
-      }
-
-
-      .photo__text {
-        order: 1;
-        margin-bottom: 10px;
-      }
+        .photo__text {
+          order: 1;
+          margin-bottom: 8px;
+        }
 
 
-      .like {
-        padding-right: 9px;
-      }
+        .like__btn {
+          padding-right: 10px;
+        }
 
 
-      .like__btn {
-        padding-right: 13px;
-      }
+        .like__link {
+          margin-right: 13px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
 
 
-      .like__link {
-        margin-right: 17px;
-      }
-
-
-      figcaption {
-        width: $tablet-width - 40px;
-        flex-direction: row;
-      }
+        figcaption {
+          width: $tablet-width - 40px;
+          flex-direction: row;
+        }
     }
   }
 
@@ -155,60 +144,47 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-
     flex-grow: 1;
 
     padding-top: 25px;
-    padding-bottom: 22px;
+    padding-bottom: 15px;
     padding-left: 28px;
   }
 
-  .photo__author {
-    // order: 1;
-  }
-
-
-  .photo__author-name {
-  }
-
-
-  .photo__data {
-  }
 
   .photo__text {
     flex-grow: 1;
     min-height: 48px;
   }
-
-  .photo__like {
-    // order: 1;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .photo {
+  .photo--full {
 
-    &--full {
-
-      .photo__link {
-
-        &::before {
+      .photo__link::before {
+          top: 55px;
+          right: calc(50% - 470px);
         }
-      }
+
 
       .photo__content {
         padding-bottom: 0;
-
       }
+
 
       .photo__text {
         margin-bottom: 0;
       }
 
+
       figcaption {
         width: $desktop-width - 20px;
       }
     }
-  }
 
+
+  .photo__content {
+    padding-top: 23px;
+    padding-bottom: 18px;
+  }
 }

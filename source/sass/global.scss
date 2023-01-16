@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   @include reset;
   min-width: $mobile-width;
@@ -15,9 +16,11 @@ body {
   color: $color--primary;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 img {
   display: block;

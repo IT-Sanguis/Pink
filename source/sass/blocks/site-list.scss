@@ -12,6 +12,7 @@
   &--active .site-list__link {
     cursor: default;
 
+
     &:hover,
     &:focus {
       color: $color--white;
@@ -22,7 +23,6 @@
 
 .site-list__link {
   display: block;
-  // min-height: 63px;
   padding: 16px 20px;
 
   font-size: 18px;
@@ -36,6 +36,7 @@
   &:focus {
     color: $color--brand;
   }
+
 
   &:active {
     color: $color--brand-30;
@@ -52,9 +53,11 @@
     width: 630px;
   }
 
+
   .site-list__item {
     position: relative;
     box-shadow: none;
+
 
     &--active .site-list__link::after {
       content: "";
@@ -68,6 +71,7 @@
     }
   }
 
+
   .site-list__link {
     padding: 16px 0;
 
@@ -76,10 +80,10 @@
     text-transform: none;
     color: $color--white;
 
+
     &:active {
       color: $color--white-30;
     }
   }
-
 }
 

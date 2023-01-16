@@ -11,7 +11,7 @@
 
 .page-footer__logo-link {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   &:hover .page-footer__logo,
   &:focus .page-footer__logo {
@@ -43,9 +43,7 @@
   width: 147px;
   fill: $color--primary;
 
-  // .logo__sign {
-  //   transform: translate(-70px, -8px);
-  // }
+
   .logo__glasses {
     display: block;
     fill: $color--brand;
@@ -59,6 +57,7 @@
 
 
 .page-footer__copyright {
+  margin-top: 10px;
 }
 
 
@@ -73,6 +72,7 @@
   vertical-align: middle;
   height: 30px;
 
+
   svg {
     fill: $color--brand;
   }
@@ -83,10 +83,12 @@
     svg {fill: $color--primary;}
   }
 
+
   &:active svg {
     fill: $color--primary-30;
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .page-footer {
@@ -95,33 +97,41 @@
     align-items: center;
 
     min-height: 127px;
+    padding-top: 37px;
   }
+
 
   .page-footer__logo-link {
     display: inline-block;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
+
 
   .page-footer__social {
     display: flex;
     margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+
+  .page-footer__copyright {
+    margin-top: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    // min-height: 197px;
-    // padding-top: 87px;
     padding-top: 72px;
     padding-bottom: 72px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .page-footer__copyright-text {
-    font-size: 18px;
-    line-height: 1;
+
+  .page-footer__logo-link {
+    margin-bottom: 0;
   }
+
 
   .page-footer__logo {
     width: 147px;
@@ -149,5 +159,22 @@
       display: block;
       fill: $color--primary;
     }
+  }
+
+
+  .page-footer__social {
+    margin-right: 0;
+    padding-left: 15px;
+  }
+
+
+  .page-footer__copyright-text {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }

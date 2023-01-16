@@ -18,17 +18,20 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  z-index: -1;
 
   margin: 0 auto;
-  z-index: -1;
+
+  transform: translateX(-50%);
 }
+
 
 @media (min-width: $tablet-width) {
   .map {
-    height: 376px;
+    height: 371px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .map {

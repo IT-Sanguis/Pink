@@ -37,7 +37,6 @@
       padding-top: 40px;
       padding-bottom: 45px;
     }
-
   }
 }
 
@@ -79,6 +78,7 @@
     width: calc($tablet-width - 200px);
   }
 
+
   .modal__title {
     margin-bottom: 20px;
     padding: 0 80px;
@@ -86,12 +86,14 @@
     font-size: 30px;
   }
 
+
   .modal__desc {
     padding: 0 50px;
 
     font-size: 18px;
     line-height: 1.33;
   }
+
 
   .modal__btn-wrapper {
     padding: 50px 80px;
@@ -109,6 +111,7 @@
         padding-bottom: 60px;
       }
 
+
       .modal__btn-wrapper {
         padding: 50px 240px;
 
@@ -117,17 +120,21 @@
     }
   }
 
+
   .modal__content-wrapper {
     padding-bottom: 35px;
   }
+
 
   .modal__title {
     margin-bottom: 25px;
   }
 
+
   .modal__desc {
     padding: 0 170px;
   }
+
 
   .modal__btn-wrapper {
     padding: 50px 160px;

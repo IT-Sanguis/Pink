@@ -3,18 +3,8 @@
 }
 
 
-.slider__item {
-
-  &--current {
-  }
-}
-
 .slider__btn {
   display: none;
-}
-
-
-.slider__dots {
 }
 
 
@@ -24,24 +14,31 @@
     top: 15%;
     z-index: 1;
     display: block;
+
     width: 30px;
     height: 30px;
+
     background-color: transparent;
+
     border: none;
     border-top: 2px solid $color--primary;
     border-right: 2px solid $color--primary;
+
     opacity: 0.3;
-    // border-radius: 2px;
+
     cursor: pointer;
+
 
     &:hover,
     &:focus {
       opacity: 0.6;
     }
 
+
     &:active {
       opacity: 0.1;
     }
+
 
     &--prev {
       left: 0;
@@ -53,9 +50,8 @@
       right: 0;
       transform: rotate(45deg);
     }
-
-
   }
+
 
   .slider__dots {
     display: none;

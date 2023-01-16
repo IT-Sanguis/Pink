@@ -1,7 +1,8 @@
 .research {
-  padding-top: 90px;
+  padding-top: 92px;
   padding-bottom: 80px;
 }
+
 
 .research__wrapper {
   position: relative;
@@ -10,9 +11,9 @@
   margin-left: auto;
   margin-right: 0;
 
+
   &::before {
     content: "";
-
     position: absolute;
     left: -100%;
     top: -38px;
@@ -24,9 +25,9 @@
     background-repeat: no-repeat;
   }
 
+
   &::after {
     content: "24";
-
     position: absolute;
     left: -100%;
     top: 18px;
@@ -49,6 +50,7 @@
   }
 }
 
+
 .research__title {
   @include reset;
   margin-bottom: 10px;
@@ -58,20 +60,24 @@
   line-height: 1.2;
 }
 
+
 .research__desc {
   @include reset;
   margin-bottom: 10px;
   padding-right: 5px;
 }
 
+
 .research__link {
   color: $color--brand;
   text-decoration: underline;
+
 
   &:hover,
   &:focus {
     color: $color--primary;
   }
+
 
   &:active {
     color: $color--brand-30;
@@ -80,16 +86,17 @@
 
 
 @media (min-width: $desktop-width) {
-
   .research {
     padding-top: 110px;
     padding-bottom: 110px;
   }
 
+
   .research__wrapper {
     width: 565px;
     margin-left: auto;
     margin-right: 0;
+
 
     &::before {
       top: -95px;
@@ -98,6 +105,7 @@
       width: 298px;
       height: 345px;
     }
+
 
     &::after {
       top: -25px;
@@ -115,6 +123,7 @@
     }
   }
 
+
   .research__title {
     margin-bottom: 25px;
     padding-right: 50px;
@@ -122,12 +131,14 @@
     line-height: 1;
   }
 
+
   .research__desc {
   margin-bottom: 32px;
 
   font-size: 18px;
   line-height: 1.67;
   }
+
 
   .research__link {
     font-size: 18px;

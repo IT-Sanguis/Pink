@@ -176,6 +176,7 @@
   }
 }
 
+
 .contest__input-checkbox:checked+.contest__label-checkbox::after {
   content: "";
   position: absolute;
@@ -190,6 +191,7 @@
 
   transform: rotate(-45deg);
 }
+
 
 .contest__input-radio:checked+.contest__label-radio::after {
   content: "";
@@ -259,7 +261,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -9px;
+    top: -5px;
     left: 0;
 
     width: 39px;
@@ -330,9 +332,11 @@
   color: $color--brand;
 }
 
+
 .contest__sub-legend {
   display: none;
 }
+
 
 @media (min-width: $tablet-width) {
   .contest {
@@ -414,7 +418,6 @@
 
     margin-top: 54px;
     margin-bottom: 48px;
-    // padding-bottom: 30px;
   }
 
 
@@ -618,6 +621,7 @@
     justify-content: space-between;
   }
 
+
   .contest__fieldset-wrapper {
     width: auto;
     padding-top: 0;
@@ -674,7 +678,6 @@
 
   .contest__list {
 
-
     &--contacts {
       display: flex;
       justify-content: space-between;
@@ -688,13 +691,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 57px;
+      padding-right: 12px;
     }
   }
 
   .contest__item {
-
 
     &--name {
       margin-bottom: 52px;
@@ -705,6 +707,7 @@
       @include reset;
       width: 375px;
     }
+
 
     &--achievements {
       width: 260px;
@@ -740,9 +743,11 @@
     margin-bottom: 0;
   }
 
+
   .contest__sub-legend {
     display: inline;
   }
+
 
   .contest__subtitle {
 

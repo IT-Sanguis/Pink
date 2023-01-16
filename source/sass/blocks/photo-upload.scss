@@ -6,21 +6,9 @@
 
 
 .photo-upload__slogan {
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 
   line-height: 2.14;
-}
-
-.photo-upload__wrapper {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 30px;
-
-  background-color: $color-bg--secondary;
-}
-
-
-.photo-upload__form {
 }
 
 
@@ -28,7 +16,6 @@
   .photo-upload {
     padding-top: 45px;
     margin-bottom: 0;
-
   }
 
 
@@ -38,20 +25,11 @@
     font-size: 18px;
     line-height: 1.67;
   }
-
-  .photo-upload__wrapper {
-    padding-top: 57px;
-    padding-bottom: 55px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .photo-upload {
     padding-top: 0;
     margin-bottom: 30px;
-  }
-
-  .photo-upload__wrapper {
-    // width: 940px;
   }
 }

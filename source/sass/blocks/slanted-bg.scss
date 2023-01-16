@@ -4,6 +4,7 @@
 
   background-color: $color-bg--secondary;
 
+
   &::before {
     content: "";
     position: absolute;
@@ -20,6 +21,7 @@
   }
 }
 
+
 @media (min-width: $tablet-width) {
   .slanted-bg {
 
@@ -28,5 +30,4 @@
       background-size: cover;
     }
   }
-
 }

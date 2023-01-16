@@ -9,12 +9,12 @@
   font-weight: 700;
   line-height: 1.67;
   color: $color--white;
-  // color: inherit;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
 
   background-color: $color-btn;
+
   border: solid 2px $color-btn;
   border-radius: 2px;
 
@@ -79,6 +79,7 @@
 
     &:active {
       color: $color--white-30;
+
       background-color: $color-bg--primary;
     }
   }
@@ -86,8 +87,9 @@
 
   &--rectangular {
     &:hover, &:focus {
-      border: solid 2px $color-btn--hover;
       background-color: $color-btn--hover;
+
+      border: solid 2px $color-btn--hover;
     }
 
 
@@ -97,6 +99,7 @@
 
     &:disabled {
       background-color: $color--disabled;
+
       border-color: $color--disabled;
     }
   }

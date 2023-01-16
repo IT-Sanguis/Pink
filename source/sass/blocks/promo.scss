@@ -8,9 +8,8 @@
     background-image: url("../img/bg-back-mobile@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    // background-size: 100% auto;
-    // background-size: auto;
     background-size: 700px auto;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -18,9 +17,11 @@
     }
 }
 
+
 .promo__wrapper {
   text-align: center;
 }
+
 
 .promo__title {
   @include reset;
@@ -32,15 +33,16 @@
   color: $color--white;
 }
 
+
 @media (min-width: $tablet-width) {
   .promo {
     min-height: 395px;
     padding-top: 137px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    // background-position: center bottom;
     background-position: center -44px;
     background-size: auto;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -48,18 +50,19 @@
     }
   }
 
+
   .promo__title {
     font-size: 50px;
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .promo {
     min-height: 240px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    // background-position: center bottom;
-    background-position: center 0;
-    // background-size: auto;
+    background-position: center 11px;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -67,12 +70,14 @@
     }
   }
 
+
   .promo__title {
+    margin-bottom: 0;
     padding-top: 35px;
     padding-right: 200px;
     padding-bottom: 100px;
     padding-left: 200px;
-    margin-bottom: 0;
+
 
     &--contest {
       padding-right: 86px;

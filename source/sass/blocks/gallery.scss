@@ -2,6 +2,7 @@
   padding-top: 45px;
 }
 
+
 .gallery__desc {
   margin-bottom: 50px;
 
@@ -21,6 +22,7 @@
     padding-top: 95px;
   }
 
+
   .gallery__desc {
     margin-bottom: 75px;
     padding: 0 45px;
@@ -28,10 +30,12 @@
     font-size: 18px;
     line-height: 1.67;
 
+
     br {
       display: none;
     }
   }
+
 
   .gallery__inner {
     display: flex;
@@ -40,14 +44,13 @@
     justify-content: space-between;
   }
 
+
   .gallery__figure {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
     margin: 0;
     margin-bottom: 20px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .gallery__desc {
@@ -55,9 +58,11 @@
     padding: 0 165px;
   }
 
+
   .gallery__inner {
     padding: 0 10px;
   }
+
 
   .gallery__figure {
     margin-bottom: 55px;

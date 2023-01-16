@@ -7,7 +7,6 @@
     left: 11px;
     top: 11px;
 
-    // font-family: inherit;
     font-size: 14px;
     font-weight: 400;
     line-height: 2.14;
@@ -45,6 +44,7 @@
     &::before {
       width: 65px;
       height: 62px;
+
       background-size: 100%;
       background-position: -5px 0;
     }
@@ -62,6 +62,7 @@
     &::before {
       width: 75px;
       height: 75px;
+
       background-position: 0 0;
     }
   }

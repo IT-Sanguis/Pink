@@ -10,7 +10,6 @@
   width: 13px;
   height: 13px;
   padding: 12px;
-  // color: inherit;
 
   vertical-align: middle;
 
@@ -23,6 +22,7 @@
 
   cursor: pointer;
 }
+
 
 .like__link {
   padding: 4px;
@@ -39,6 +39,7 @@
   color: inherit;
 }
 
+
 @media (min-width: $tablet-width) {
   .like {
     display: flex;
@@ -46,11 +47,11 @@
     align-items: center;
   }
 
+
   .like__btn {
-    // display: block;
-    // padding-right: 25px;
     order: 1;
   }
+
 
   .like__link {
     padding-left: 0;

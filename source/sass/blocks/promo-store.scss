@@ -1,7 +1,7 @@
 .promo-store {
   min-height: 670px;
-  padding-top: 460px;
-// Рассмотреть возможность избавления от паддинга (Псевдоэлемент или обертка)
+  padding-top: 464px;
+
   color: $color--white;
   text-align: center;
 
@@ -17,10 +17,11 @@
 
     background-image: url("../img/iphone-hand-mobile@1x-min.png");
     background-repeat: no-repeat;
-    // background-position: center 45%;
     background-size: auto;
-    background-position: 50% 39%;
+    background-position: 50% 40%;
+
     transform: translateX(-10%);
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-mobile@2x.png");
@@ -45,23 +46,20 @@
 
 
 .promo-store__btn {
-  margin-top: 30px;
+  margin-top: 27px;
   margin-bottom: 30px;
 }
 
 
 .promo-store__list {
   @include reset-list;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   padding: 0 30px;
-}
-
-
-.promo-store__item {
 }
 
 
@@ -78,6 +76,7 @@
 
   &--iphone {
     background-image: url("../img/logo-apple.svg");
+    background-position: 78%;
   }
 
 
@@ -91,6 +90,7 @@
   }
 }
 
+
 .promo-store__desc {
   @include reset;
   margin-bottom: 10px;
@@ -99,7 +99,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .promo-store {
     min-height: 686px;
     padding-top: 160px;
@@ -108,7 +107,9 @@
     &::before {
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-position: center 100%;
+
       transform: translateX(0);
+
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -121,6 +122,7 @@
   .promo-store__wrapper {
     width: $tablet-width;
     margin: 0 auto;
+
     background-color: transparent;
   }
 
@@ -142,15 +144,19 @@
     font-weight: 300;
   }
 
+
   .promo-store__btn {
+    margin-top: 30px;
     margin-bottom: 47px;
   }
 
+
   .promo-store__list {
+    margin-bottom: 37px;
     padding-left: 43px;
     padding-right: 43px;
-    margin-bottom: 37px;
   }
+
 
   .promo-store__desc {
     font-size: 18px;
@@ -171,7 +177,9 @@
       width: 560px;
       height: 645px;
       left: 50%;
+
       transform: translateX(calc(-50% + 155px));
+
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -179,6 +187,7 @@
       }
     }
   }
+
 
   .promo-store__wrapper {
     width: $desktop-width;
@@ -188,6 +197,7 @@
   .promo-store__content {
     margin-left: -10px;
   }
+
 
   .promo-store__slogan {
     font-size: 50px;
@@ -203,8 +213,8 @@
     padding: 15px 20px;
   }
 
+
   .promo-store__list {
     margin-bottom: 55px;
   }
-
 }
