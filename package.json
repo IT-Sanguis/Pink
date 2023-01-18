@@ -32,15 +32,16 @@
     "stylelint-config-prettier": "^9.0.4"
   },
   "scripts": {
-    "hint": "htmlhint path/to/html/files/*.html",
+    "hint": "htmlhint build/*.html",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
-    "test": "npm run stylelint",
+    "test": "npm run hint && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
   },
+
   "browserslist": [
+    "> 1%",
     "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "not ie < 11"
   ]
 }

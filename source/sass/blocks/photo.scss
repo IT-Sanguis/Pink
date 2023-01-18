@@ -8,6 +8,7 @@
 
     .photo__link {
       position: relative;
+      display: block;
 
       &::before {
         content: "Панорама дня";
@@ -160,7 +161,6 @@
 
 @media (min-width: $desktop-width) {
   .photo--full {
-
       .photo__link::before {
           top: 55px;
           right: calc(50% - 470px);

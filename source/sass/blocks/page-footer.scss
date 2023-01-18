@@ -57,7 +57,9 @@
 
 
 .page-footer__copyright {
-  margin-top: 10px;
+  max-width: 250px;
+  // margin-top: 10px;
+  margin: 10px auto;
 }
 
 
@@ -116,6 +118,8 @@
 
   .page-footer__copyright {
     margin-top: 6px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

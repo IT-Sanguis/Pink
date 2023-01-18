@@ -36,10 +36,12 @@
   .price {
     padding-top: 165px;
     padding-bottom: 100px;
+    overflow-x: auto;
   }
 
 
   .price__wrapper {
     padding: 0 10px;
+    overflow-x: auto;
   }
 }

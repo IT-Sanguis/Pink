@@ -111,7 +111,7 @@
 .contest__subtitle {
   @include reset;
 
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -196,7 +196,7 @@
 .contest__input-radio:checked+.contest__label-radio::after {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: 13px;
 
   width: 14px;
@@ -205,6 +205,8 @@
   background-color: $color--brand;
 
   border-radius: 50%;
+
+  transform: translateY(-50%);
 }
 
 
@@ -677,7 +679,6 @@
 
 
   .contest__list {
-
     &--contacts {
       display: flex;
       justify-content: space-between;
@@ -697,7 +698,6 @@
   }
 
   .contest__item {
-
     &--name {
       margin-bottom: 52px;
     }
@@ -714,10 +714,15 @@
       padding-left: 0;
 
       &:nth-child(1) {order: 1;}
+
       &:nth-child(2) {order: 2;}
+
       &:nth-child(3) {order: 1;}
+
       &:nth-child(4) {order: 2;}
+
       &:nth-child(5) {order: 1;}
+
       &:nth-child(6) {order: 2;}
     }
 
@@ -750,7 +755,6 @@
 
 
   .contest__subtitle {
-
     &--emoji {
       margin-bottom: 33px;
     }

@@ -61,6 +61,9 @@
   line-height: 1.33;
   font-weight: 700;
   color: $color--black;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  overflow-wrap: break-word;
 }
 
 
@@ -150,7 +153,12 @@
 
 
   .features__wrapper {
+    min-height: 505px;
     padding-top: 115px;
+
+    &::after {
+      display: none;
+    }
   }
 
 
@@ -246,15 +254,6 @@
 
     font-size: 18px;
     line-height: 1.67;
-  }
-
-
-  .features__wrapper {
-    min-height: 505px;
-
-    &::after {
-      display: none;
-    }
   }
 
 
