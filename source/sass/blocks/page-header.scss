@@ -1,5 +1,5 @@
 .page-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -11,8 +11,7 @@
 
 
   &--open {
-    // position: relative;
-    position: fixed;
+    position: relative;
     z-index: 2;
 
     background-color: $color-bg--primary;
@@ -71,7 +70,7 @@
 
 
     & + .page-main {
-      margin-top: 258px;
+      margin-top: -68px;
     }
 
 
@@ -96,6 +95,9 @@
       display: none;
     }
 
+    & + .page-main {
+      margin-top: -68px;
+    }
 
     nav {
       display: block;
@@ -200,12 +202,26 @@
 }
 
 
-@media (min-width: $tablet-width) {
-  .page-header--open + .page-main {
-    margin-top: 298px;
+
+@media (min-width: $tablet-width) and (max-width: 959px) {
+  .page-header--open + .page-main,
+  .page-header--js-disabled + .page-main {
+    .promo {
+      min-height: 395px;
+      padding-top: 137px;
+
+      background-position-y: -42px;
+    }
+
+
+    .promo-store {
+      min-height: 686px;
+      padding-top: 160px;
+    }
   }
+}
 
-
+@media (min-width: $tablet-width) {
   .page-header__wrapper {
     min-height: 110px;
   }
@@ -229,10 +245,10 @@
 
 
 @media (min-width: $desktop-width) {
-  .page-header--open + .page-main {
+  .page-header--open + .page-main,
+  .page-header--js-disabled + .page-main {
     margin-top: 0;
   }
-
 
   .page-header {
     position: absolute;

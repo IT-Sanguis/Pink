@@ -3,8 +3,24 @@
 }
 
 
+.slider__item {
+  display: none;
+
+  &--current {
+    display: block;
+    min-height: 222px;
+  }
+}
+
+
 .slider__btn {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item--current {
+    min-height: 213px;
+  }
 }
 
 
@@ -52,6 +68,9 @@
     }
   }
 
+  .slider__item--current {
+    min-height: 220px;
+  }
 
   .slider__dots {
     display: none;

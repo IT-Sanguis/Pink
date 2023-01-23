@@ -17,6 +17,7 @@ const extReplace = require("gulp-ext-replace");
 const browserSync = require("browser-sync").create();
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const uglify = require('gulp-uglify-es').default;
 
 
 function style() {
@@ -50,6 +51,10 @@ function cleanHTML() {
   return del("build/*.html");
 }
 
+function cleanJS() {
+  return del("build/js");
+}
+
 
 function copy() {
   return gulp.src([
@@ -80,6 +85,14 @@ function html() {
     ]))
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
+}
+
+function js() {
+  return gulp.src("source/js/**/*.js")
+  .pipe(gulp.dest("build/js"))
+  .pipe(uglify())
+  .pipe(rename({ suffix: ".min" }))
+  .pipe(gulp.dest("build/js"));
 }
 
 
@@ -137,7 +150,7 @@ function reload() {
 function watchTask() {
   gulp.watch("source/sass/**/*.scss", style)
   gulp.watch("source/*.html").on("change", updateHTML)
-  gulp.watch("source/js/**/*.js").on("change", reload)
+  gulp.watch("source/js/**/*.js").on("change", updateJS)
 }
 
 
@@ -152,11 +165,13 @@ exports.server = server;
 exports.sprite = sprite;
 
 
-const build = gulp.series(clean, copy, style, images, sprite, exportWebP, html);
+const build = gulp.series(clean, copy, style, js, images, sprite, exportWebP, html);
 const updateHTML = gulp.series(cleanHTML, html, reload);
+const updateJS = gulp.series(cleanJS, js, reload);
 const updateIMG = gulp.series(cleanImg, copyImg, images, exportWebP, reload);
 
 exports.updateHTML = updateHTML;
+exports.updateJS = updateJS;
 exports.updateIMG = updateIMG;
 exports.build = build;
 exports.default = gulp.series(build, gulp.parallel(server, watchTask));

@@ -1,12 +1,22 @@
 .dots {
   display: block;
   text-align: center;
+
+  input[name="toggle"]:checked + .dots__dot,
+  input[name="toggle-tb"]:checked + .dots__dot {
+    background-color: $color--white;
+
+    box-shadow: 0 0 0 3px $color--primary;
+
+    cursor: default;
+  }
 }
 
 
 .dots__dot {
   @include reset;
 
+  display: inline-block;
   width: 6px;
   height: 6px;
   margin: 8px;
@@ -19,6 +29,8 @@
 
   cursor: pointer;
 
+
+
   &:hover,
   &:focus {
     background-color: $color--primary-60;
@@ -30,8 +42,9 @@
 }
 
 
-.dots__dot--current {
-  background-color: $color--white;
 
-  box-shadow: 0 0 0 3px $color--primary;
-}
+// .dots__dot--current {
+//   background-color: $color--white;
+
+//   box-shadow: 0 0 0 3px $color--primary;
+// }

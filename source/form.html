@@ -24,8 +24,8 @@
   </div>
 
   <!-- <header class="page-header page-header--open"> -->
-  <header class="page-header page-header--js-disabled">
   <!-- <header class="page-header"> -->
+  <header class="page-header page-header--js-disabled">
     <div class="page-header__wrapper ">
       <a class="page-header__logo-link" href="index.html">
         <svg class="page-header__logo logo" xmlns="http://www.w3.org/2000/svg" width="147" height="40" aria-labelledby="logo" role="img">
@@ -70,18 +70,20 @@
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span class="contest__sub-desc">Пожалуйста, заполните форму ниже:</span>
       </p>
-      <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="contest__form" action="https://echo.htmlacademy.ru" target="_blank" method="post">
         <div class="contest__fieldset-wrapper contest__fieldset-wrapper--name">
           <fieldset class="contest__fieldset contest__fieldset--name">
             <legend class="visually-hidden">Ваше полное имя</legend>
             <ul class="contest__list contest__list--name">
               <li class="contest__item contest__item--name">
                 <label class="contest__label" for="lastname">Фамилия:</label>
-                <input class="contest__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required>
+                <!-- <input class="contest__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *" required> -->
+                <input class="contest__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *">
               </li>
               <li class="contest__item contest__item--name">
                 <label class="contest__label" for="firstname">Имя:</label>
-                <input class="contest__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *" required>
+                <!-- <input class="contest__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *" required> -->
+                <input class="contest__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя *">
               </li>
               <li class="contest__item contest__item--name">
                 <label class="contest__label" for="middlename">Отчество:</label>
@@ -131,7 +133,8 @@
               </li>
               <li class="contest__item contest__item--contacts contest__item--email">
                 <label class="contest__label contest__label--contacts" for="email">Адрес почты</label>
-                <input class="contest__input contest__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                <!-- <input class="contest__input contest__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required> -->
+                <input class="contest__input contest__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
@@ -245,5 +248,8 @@
       <button class="modal__btn btn btn--rectangular" type="button">OK</button>
     </div>
   </section>
+
+  <script src="js/nav.min.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 </html>

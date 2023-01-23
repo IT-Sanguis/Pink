@@ -6,8 +6,19 @@
 
   border-collapse: separate;
   border-spacing: 2px;
+  transition: 500ms;
 
-  transform: translateX(-50%);
+  &--column-1 {
+    transform: translateX(-17%);
+  }
+
+  &--column-2 {
+    transform: translateX(-50%);
+  }
+
+  &--column-3 {
+    transform: translateX(-83%);
+  }
 }
 
 

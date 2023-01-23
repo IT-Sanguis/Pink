@@ -21,6 +21,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svgstore": "^9.0.0",
+    "gulp-uglify-es": "^3.0.0",
     "htmlhint": "^1.1.4",
     "imagemin-webp": "^6.0.0",
     "postcss": "^8.4.20",
@@ -38,7 +39,6 @@
     "build": "gulp build",
     "start": "gulp"
   },
-
   "browserslist": [
     "> 1%",
     "last 2 versions",

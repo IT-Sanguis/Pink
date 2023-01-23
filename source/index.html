@@ -24,8 +24,8 @@
   </div>
 
   <!-- <header class="page-header page-header--open"> -->
-  <header class="page-header page-header--js-disabled">
   <!-- <header class="page-header"> -->
+  <header class="page-header page-header--js-disabled">
     <div class="page-header__wrapper">
       <a class="page-header__logo-link" href="#">
         <svg class="page-header__logo logo" xmlns="http://www.w3.org/2000/svg" width="147" height="40" aria-labelledby="logo" role="img">
@@ -121,7 +121,7 @@
     <section class="reviews container">
       <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
       <div class="reviews__slider slider">
-        <div class="slider__item slider__item--current">
+        <div class="slider__item slider__item--1 slider__item--current">
           <blockquote class="reviews__item">
             <div class="reviews__author-wrapper">
               <cite class="reviews__author">Николай Петров</cite>
@@ -133,7 +133,7 @@
           </blockquote>
         </div>
 
-<!--    <div class="slider__item">
+        <div class="slider__item slider__item--2">
           <blockquote class="reviews__item">
             <div class="reviews__author-wrapper">
               <cite class="reviews__author">Василий Сидоров</cite>
@@ -144,7 +144,8 @@
             </p>
           </blockquote>
         </div>
-        <div class="slider__item">
+
+        <div class="slider__item slider__item--3">
           <blockquote class="reviews__item">
             <div class="reviews__author-wrapper">
               <cite class="reviews__author">Ольга Воротникова</cite>
@@ -154,14 +155,24 @@
               «Это просто восхитительно!»
             </p>
           </blockquote>
-        </div> -->
+        </div>
 
         <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий"></button>
         <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий"></button>
         <div class="slider__dots dots">
+
+          <!--
           <button class="dots__dot dots__dot--current" type="button" aria-label="1"></button>
           <button class="dots__dot" type="button" aria-label="2"></button>
           <button class="dots__dot" type="button" aria-label="3"></button>
+        -->
+
+          <input class="visually-hidden" type="radio" name="toggle" id="toggle-1" data-slider="slider__item--1" aria-label="Слайд №1" checked>
+          <label class="dots__dot" for="toggle-1"></label>
+          <input class="visually-hidden" type="radio" name="toggle" id="toggle-2" data-slider="slider__item--2" aria-label="Слайд №2">
+          <label class="dots__dot" for="toggle-2"></label>
+          <input class="visually-hidden" type="radio" name="toggle" id="toggle-3" data-slider="slider__item--3" aria-label="Слайд №3">
+          <label class="dots__dot" for="toggle-3"></label>
         </div>
       </div>
 
@@ -170,7 +181,7 @@
     <section class="price slanted-bg ">
       <h2 class="visually-hidden">Доступные тарифы</h2>
       <div class="price__wrapper container">
-        <table class="price__table price-table">
+        <table class="price__table price-table price-table--column-2">
           <thead class="price-table__headers">
             <tr>
               <th class="price-table__header"></th>
@@ -274,9 +285,16 @@
         </table>
       </div>
       <div class="price__dots dots">
-        <button class="dots__dot" type="button" aria-label="1"></button>
+        <!-- <button class="dots__dot" type="button" aria-label="1"></button>
         <button class="dots__dot  dots__dot--current" type="button" aria-label="2"></button>
-        <button class="dots__dot" type="button" aria-label="3"></button>
+        <button class="dots__dot" type="button" aria-label="3"></button> -->
+
+        <input class="visually-hidden" type="radio" name="toggle-tb" id="toggle-tb-1" data-table="price-table--column-1" aria-label="Столбец №1">
+        <label class="dots__dot" for="toggle-tb-1"></label>
+        <input class="visually-hidden" type="radio" name="toggle-tb" id="toggle-tb-2" data-table="price-table--column-2" aria-label="Столбец №2" checked>
+        <label class="dots__dot" for="toggle-tb-2"></label>
+        <input class="visually-hidden" type="radio" name="toggle-tb" id="toggle-tb-3" data-table="price-table--column-3" aria-label="Столбец №3">
+        <label class="dots__dot" for="toggle-tb-3"></label>
       </div>
     </section>
 
@@ -365,5 +383,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/index.min.js"></script>
+  <script src="js/nav.min.js"></script>
 </body>
 </html>
